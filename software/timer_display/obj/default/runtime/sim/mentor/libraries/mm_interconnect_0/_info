@@ -1,0 +1,31 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/software/timer_display/obj/default/runtime/sim/mentor
+vtimer_display_mm_interconnect_0
+!s110 1764122449
+!i10b 1
+!s100 dHi5UHA]XFc3HI`U[?34^1
+IBKX750Ol^kJ>5f?a:z[5z1
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1764121409
+8C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_mm_interconnect_0.v
+FC:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_mm_interconnect_0.v
+L0 9
+OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1764122449.000000
+!s107 C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_mm_interconnect_0.v|
+!s90 -reportprogress|300|C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_mm_interconnect_0.v|-work|mm_interconnect_0|
+!i113 1
+o-work mm_interconnect_0
+tCvgOpt 0
