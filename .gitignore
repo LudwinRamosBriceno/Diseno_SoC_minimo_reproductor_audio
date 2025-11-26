@@ -1,0 +1,63 @@
+# Ignorar archivos y carpetas generados por Quartus Prime y herramientas relacionadas
+
+# Directorios generados por Quartus/Qsys/SOPC Builder
+db/
+incremental_db/
+output_files/
+.qsys_edit/
+.qsys_history/
+ip/
+ip_generated/
+ip_user_files/
+synthesis/
+
+# Archivos de workspace / usuario (configuraciones locales)
+*.qws
+*.qpf.user
+*.qws.*
+*.qip
+
+# Archivos generados por SOPC/Qsys (normalmente regenerables)
+*.sopcinfo
+*.sopcinfo.*
+
+# Archivos de programación / bitstreams / imágenes generadas
+*.sof
+*.pof
+*.rbf
+*.jic
+*.hex
+*.rbf
+
+# Informes, logs y archivos de salida de compilación
+*.rpt
+*.fit.rpt
+*.map.rpt
+*.sta.rpt
+*.summary
+*.log
+*.jou
+
+# Artefactos de síntesis/simulación/temporales
+*.sdo
+*.sld
+*.vwf
+*.wlf
+*.vcd
+*.psl
+*.db
+*.spd
+
+# Backups y temporales del editor
+*~
+*.swp
+*.bak
+
+# IDE/editor y sistema operativo
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Si necesitas que algunos de los archivos ignorados aquí (por ejemplo .sopcinfo o .qws)
+# se mantengan en el repositorio, dímelo y ajusto el .gitignore.
