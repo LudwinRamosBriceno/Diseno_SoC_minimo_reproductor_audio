@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>25/11/2025 07:44:38 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1764121478463</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>26/11/2025 09:23:26 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1764213806488</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\alber\OneDrive\Documentos\GitHub\Diseno_SoC_minimo_reproductor_audio\software\timer_display_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>..\..\timer_display.sopcinfo</SopcDesignFile>
@@ -911,26 +911,32 @@
                 <attributes>timer</attributes>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>DISPLAY</slaveDescriptor>
+                <slaveDescriptor>PAUSE_BUTTON</slaveDescriptor>
                 <addressRange>0x00021020 - 0x0002102F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>RESET_BUTTON</slaveDescriptor>
+                <slaveDescriptor>DISPLAY</slaveDescriptor>
                 <addressRange>0x00021030 - 0x0002103F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>START_BUTTON</slaveDescriptor>
+                <slaveDescriptor>RESET_BUTTON</slaveDescriptor>
                 <addressRange>0x00021040 - 0x0002104F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
+                <slaveDescriptor>START_BUTTON</slaveDescriptor>
+                <addressRange>0x00021050 - 0x0002105F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
                 <slaveDescriptor>UART</slaveDescriptor>
-                <addressRange>0x00021050 - 0x00021057</addressRange>
+                <addressRange>0x00021060 - 0x00021067</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes>printable</attributes>
         </MemoryMap>

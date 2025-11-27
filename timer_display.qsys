@@ -13,7 +13,7 @@
    {
       datum _sortIndex
       {
-         value = "6";
+         value = "7";
          type = "int";
       }
       datum sopceditor_expanded
@@ -26,7 +26,7 @@
    {
       datum baseAddress
       {
-         value = "135200";
+         value = "135216";
          type = "String";
       }
    }
@@ -48,6 +48,27 @@
       datum baseAddress
       {
          value = "133120";
+         type = "String";
+      }
+   }
+   element PAUSE_BUTTON
+   {
+      datum _sortIndex
+      {
+         value = "6";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element PAUSE_BUTTON.s1
+   {
+      datum baseAddress
+      {
+         value = "135200";
          type = "String";
       }
    }
@@ -89,7 +110,7 @@
    {
       datum baseAddress
       {
-         value = "135216";
+         value = "135232";
          type = "String";
       }
    }
@@ -110,7 +131,7 @@
    {
       datum baseAddress
       {
-         value = "135232";
+         value = "135248";
          type = "String";
       }
    }
@@ -123,7 +144,7 @@
       }
       datum sopceditor_expanded
       {
-         value = "0";
+         value = "1";
          type = "boolean";
       }
    }
@@ -139,12 +160,12 @@
    {
       datum _sortIndex
       {
-         value = "7";
+         value = "8";
          type = "int";
       }
       datum sopceditor_expanded
       {
-         value = "0";
+         value = "1";
          type = "boolean";
       }
    }
@@ -152,7 +173,7 @@
    {
       datum baseAddress
       {
-         value = "135248";
+         value = "135264";
          type = "String";
       }
    }
@@ -165,7 +186,7 @@
       }
       datum sopceditor_expanded
       {
-         value = "0";
+         value = "1";
          type = "boolean";
       }
    }
@@ -194,6 +215,11 @@
  <interface
    name="display_7_segments"
    internal="DISPLAY.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="pause_button"
+   internal="PAUSE_BUTTON.external_connection"
    type="conduit"
    dir="end" />
  <interface name="reset" internal="clk_0.clk_in_reset" type="reset" dir="end" />
@@ -241,7 +267,7 @@
   <parameter name="dataAddrWidth" value="18" />
   <parameter name="dataMasterHighPerformanceAddrWidth" value="1" />
   <parameter name="dataMasterHighPerformanceMapParam" value="" />
-  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='RAM.s1' start='0x10000' end='0x20000' type='altera_avalon_onchip_memory2.s1' /><slave name='NIOSII.debug_mem_slave' start='0x20800' end='0x21000' type='altera_nios2_gen2.debug_mem_slave' /><slave name='TIMER.s1' start='0x21000' end='0x21020' type='altera_avalon_timer.s1' /><slave name='DISPLAY.s1' start='0x21020' end='0x21030' type='altera_avalon_pio.s1' /><slave name='RESET_BUTTON.s1' start='0x21030' end='0x21040' type='altera_avalon_pio.s1' /><slave name='START_BUTTON.s1' start='0x21040' end='0x21050' type='altera_avalon_pio.s1' /><slave name='UART.avalon_jtag_slave' start='0x21050' end='0x21058' type='altera_avalon_jtag_uart.avalon_jtag_slave' /></address-map>]]></parameter>
+  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='RAM.s1' start='0x10000' end='0x20000' type='altera_avalon_onchip_memory2.s1' /><slave name='NIOSII.debug_mem_slave' start='0x20800' end='0x21000' type='altera_nios2_gen2.debug_mem_slave' /><slave name='TIMER.s1' start='0x21000' end='0x21020' type='altera_avalon_timer.s1' /><slave name='PAUSE_BUTTON.s1' start='0x21020' end='0x21030' type='altera_avalon_pio.s1' /><slave name='DISPLAY.s1' start='0x21030' end='0x21040' type='altera_avalon_pio.s1' /><slave name='RESET_BUTTON.s1' start='0x21040' end='0x21050' type='altera_avalon_pio.s1' /><slave name='START_BUTTON.s1' start='0x21050' end='0x21060' type='altera_avalon_pio.s1' /><slave name='UART.avalon_jtag_slave' start='0x21060' end='0x21068' type='altera_avalon_jtag_uart.avalon_jtag_slave' /></address-map>]]></parameter>
   <parameter name="data_master_high_performance_paddr_base" value="0" />
   <parameter name="data_master_high_performance_paddr_size" value="0" />
   <parameter name="data_master_paddr_base" value="0" />
@@ -287,7 +313,7 @@
   <parameter name="instruction_master_high_performance_paddr_size" value="0" />
   <parameter name="instruction_master_paddr_base" value="0" />
   <parameter name="instruction_master_paddr_size" value="0" />
-  <parameter name="internalIrqMaskSystemInfo" value="15" />
+  <parameter name="internalIrqMaskSystemInfo" value="31" />
   <parameter name="io_regionbase" value="0" />
   <parameter name="io_regionsize" value="0" />
   <parameter name="master_addr_map" value="false" />
@@ -400,6 +426,24 @@
   <parameter name="userDefinedSettings" value="" />
  </module>
  <module
+   name="PAUSE_BUTTON"
+   kind="altera_avalon_pio"
+   version="18.1"
+   enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="true" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="true" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Input" />
+  <parameter name="edgeType" value="FALLING" />
+  <parameter name="generateIRQ" value="true" />
+  <parameter name="irqType" value="EDGE" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="true" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="1" />
+ </module>
+ <module
    name="RAM"
    kind="altera_avalon_onchip_memory2"
    version="18.1"
@@ -472,7 +516,7 @@
   <parameter name="counterSize" value="32" />
   <parameter name="fixedPeriod" value="true" />
   <parameter name="period" value="1" />
-  <parameter name="periodUnits" value="MSEC" />
+  <parameter name="periodUnits" value="SEC" />
   <parameter name="resetOutput" value="false" />
   <parameter name="snapshot" value="true" />
   <parameter name="systemFrequency" value="50000000" />
@@ -506,7 +550,7 @@
    start="NIOSII.data_master"
    end="UART.avalon_jtag_slave">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00021050" />
+  <parameter name="baseAddress" value="0x00021060" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -538,7 +582,7 @@
    start="NIOSII.data_master"
    end="START_BUTTON.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00021040" />
+  <parameter name="baseAddress" value="0x00021050" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -547,7 +591,7 @@
    start="NIOSII.data_master"
    end="RESET_BUTTON.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00021030" />
+  <parameter name="baseAddress" value="0x00021040" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -555,6 +599,15 @@
    version="18.1"
    start="NIOSII.data_master"
    end="DISPLAY.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x00021030" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="18.1"
+   start="NIOSII.data_master"
+   end="PAUSE_BUTTON.s1">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x00021020" />
   <parameter name="defaultConnection" value="false" />
@@ -583,6 +636,7 @@
  <connection kind="clock" version="18.1" start="clk_0.clk" end="RESET_BUTTON.clk" />
  <connection kind="clock" version="18.1" start="clk_0.clk" end="DISPLAY.clk" />
  <connection kind="clock" version="18.1" start="clk_0.clk" end="UART.clk" />
+ <connection kind="clock" version="18.1" start="clk_0.clk" end="PAUSE_BUTTON.clk" />
  <connection kind="clock" version="18.1" start="clk_0.clk" end="RAM.clk1" />
  <connection kind="interrupt" version="18.1" start="NIOSII.irq" end="TIMER.irq">
   <parameter name="irqNumber" value="0" />
@@ -603,6 +657,13 @@
  </connection>
  <connection kind="interrupt" version="18.1" start="NIOSII.irq" end="UART.irq">
   <parameter name="irqNumber" value="3" />
+ </connection>
+ <connection
+   kind="interrupt"
+   version="18.1"
+   start="NIOSII.irq"
+   end="PAUSE_BUTTON.irq">
+  <parameter name="irqNumber" value="4" />
  </connection>
  <connection
    kind="reset"
@@ -626,6 +687,11 @@
    start="clk_0.clk_reset"
    end="DISPLAY.reset" />
  <connection kind="reset" version="18.1" start="clk_0.clk_reset" end="UART.reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="clk_0.clk_reset"
+   end="PAUSE_BUTTON.reset" />
  <connection kind="reset" version="18.1" start="clk_0.clk_reset" end="RAM.reset1" />
  <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
  <interconnectRequirement for="$system" name="qsys_mm.enableEccProtection" value="FALSE" />

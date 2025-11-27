@@ -6,6 +6,7 @@
 module timer_display (
 		input  wire        clk_clk,                   //                clk.clk
 		output wire [27:0] display_7_segments_export, // display_7_segments.export
+		input  wire        pause_button_export,       //       pause_button.export
 		input  wire        reset_reset_n,             //              reset.reset_n
 		input  wire        reset_button_export,       //       reset_button.export
 		input  wire        start_button_export        //       start_button.export
@@ -65,12 +66,18 @@ module timer_display (
 	wire   [1:0] mm_interconnect_0_display_s1_address;                 // mm_interconnect_0:DISPLAY_s1_address -> DISPLAY:address
 	wire         mm_interconnect_0_display_s1_write;                   // mm_interconnect_0:DISPLAY_s1_write -> DISPLAY:write_n
 	wire  [31:0] mm_interconnect_0_display_s1_writedata;               // mm_interconnect_0:DISPLAY_s1_writedata -> DISPLAY:writedata
+	wire         mm_interconnect_0_pause_button_s1_chipselect;         // mm_interconnect_0:PAUSE_BUTTON_s1_chipselect -> PAUSE_BUTTON:chipselect
+	wire  [31:0] mm_interconnect_0_pause_button_s1_readdata;           // PAUSE_BUTTON:readdata -> mm_interconnect_0:PAUSE_BUTTON_s1_readdata
+	wire   [1:0] mm_interconnect_0_pause_button_s1_address;            // mm_interconnect_0:PAUSE_BUTTON_s1_address -> PAUSE_BUTTON:address
+	wire         mm_interconnect_0_pause_button_s1_write;              // mm_interconnect_0:PAUSE_BUTTON_s1_write -> PAUSE_BUTTON:write_n
+	wire  [31:0] mm_interconnect_0_pause_button_s1_writedata;          // mm_interconnect_0:PAUSE_BUTTON_s1_writedata -> PAUSE_BUTTON:writedata
 	wire         irq_mapper_receiver0_irq;                             // TIMER:irq -> irq_mapper:receiver0_irq
 	wire         irq_mapper_receiver1_irq;                             // START_BUTTON:irq -> irq_mapper:receiver1_irq
 	wire         irq_mapper_receiver2_irq;                             // RESET_BUTTON:irq -> irq_mapper:receiver2_irq
 	wire         irq_mapper_receiver3_irq;                             // UART:av_irq -> irq_mapper:receiver3_irq
+	wire         irq_mapper_receiver4_irq;                             // PAUSE_BUTTON:irq -> irq_mapper:receiver4_irq
 	wire  [31:0] niosii_irq_irq;                                       // irq_mapper:sender_irq -> NIOSII:irq
-	wire         rst_controller_reset_out_reset;                       // rst_controller:reset_out -> [DISPLAY:reset_n, NIOSII:reset_n, RAM:reset, RESET_BUTTON:reset_n, START_BUTTON:reset_n, TIMER:reset_n, UART:rst_n, irq_mapper:reset, mm_interconnect_0:NIOSII_reset_reset_bridge_in_reset_reset, rst_translator:in_reset]
+	wire         rst_controller_reset_out_reset;                       // rst_controller:reset_out -> [DISPLAY:reset_n, NIOSII:reset_n, PAUSE_BUTTON:reset_n, RAM:reset, RESET_BUTTON:reset_n, START_BUTTON:reset_n, TIMER:reset_n, UART:rst_n, irq_mapper:reset, mm_interconnect_0:NIOSII_reset_reset_bridge_in_reset_reset, rst_translator:in_reset]
 	wire         rst_controller_reset_out_reset_req;                   // rst_controller:reset_req -> [NIOSII:reset_req, RAM:reset_req, rst_translator:reset_req_in]
 
 	timer_display_DISPLAY display (
@@ -113,6 +120,18 @@ module timer_display (
 		.dummy_ci_port                       ()                                                      // custom_instruction_master.readra
 	);
 
+	timer_display_PAUSE_BUTTON pause_button (
+		.clk        (clk_clk),                                      //                 clk.clk
+		.reset_n    (~rst_controller_reset_out_reset),              //               reset.reset_n
+		.address    (mm_interconnect_0_pause_button_s1_address),    //                  s1.address
+		.write_n    (~mm_interconnect_0_pause_button_s1_write),     //                    .write_n
+		.writedata  (mm_interconnect_0_pause_button_s1_writedata),  //                    .writedata
+		.chipselect (mm_interconnect_0_pause_button_s1_chipselect), //                    .chipselect
+		.readdata   (mm_interconnect_0_pause_button_s1_readdata),   //                    .readdata
+		.in_port    (pause_button_export),                          // external_connection.export
+		.irq        (irq_mapper_receiver4_irq)                      //                 irq.irq
+	);
+
 	timer_display_RAM ram (
 		.clk        (clk_clk),                             //   clk1.clk
 		.address    (mm_interconnect_0_ram_s1_address),    //     s1.address
@@ -127,7 +146,7 @@ module timer_display (
 		.freeze     (1'b0)                                 // (terminated)
 	);
 
-	timer_display_RESET_BUTTON reset_button (
+	timer_display_PAUSE_BUTTON reset_button (
 		.clk        (clk_clk),                                      //                 clk.clk
 		.reset_n    (~rst_controller_reset_out_reset),              //               reset.reset_n
 		.address    (mm_interconnect_0_reset_button_s1_address),    //                  s1.address
@@ -139,7 +158,7 @@ module timer_display (
 		.irq        (irq_mapper_receiver2_irq)                      //                 irq.irq
 	);
 
-	timer_display_RESET_BUTTON start_button (
+	timer_display_PAUSE_BUTTON start_button (
 		.clk        (clk_clk),                                      //                 clk.clk
 		.reset_n    (~rst_controller_reset_out_reset),              //               reset.reset_n
 		.address    (mm_interconnect_0_start_button_s1_address),    //                  s1.address
@@ -203,6 +222,11 @@ module timer_display (
 		.NIOSII_debug_mem_slave_byteenable        (mm_interconnect_0_niosii_debug_mem_slave_byteenable),  //                                   .byteenable
 		.NIOSII_debug_mem_slave_waitrequest       (mm_interconnect_0_niosii_debug_mem_slave_waitrequest), //                                   .waitrequest
 		.NIOSII_debug_mem_slave_debugaccess       (mm_interconnect_0_niosii_debug_mem_slave_debugaccess), //                                   .debugaccess
+		.PAUSE_BUTTON_s1_address                  (mm_interconnect_0_pause_button_s1_address),            //                    PAUSE_BUTTON_s1.address
+		.PAUSE_BUTTON_s1_write                    (mm_interconnect_0_pause_button_s1_write),              //                                   .write
+		.PAUSE_BUTTON_s1_readdata                 (mm_interconnect_0_pause_button_s1_readdata),           //                                   .readdata
+		.PAUSE_BUTTON_s1_writedata                (mm_interconnect_0_pause_button_s1_writedata),          //                                   .writedata
+		.PAUSE_BUTTON_s1_chipselect               (mm_interconnect_0_pause_button_s1_chipselect),         //                                   .chipselect
 		.RAM_s1_address                           (mm_interconnect_0_ram_s1_address),                     //                             RAM_s1.address
 		.RAM_s1_write                             (mm_interconnect_0_ram_s1_write),                       //                                   .write
 		.RAM_s1_readdata                          (mm_interconnect_0_ram_s1_readdata),                    //                                   .readdata
@@ -241,6 +265,7 @@ module timer_display (
 		.receiver1_irq (irq_mapper_receiver1_irq),       // receiver1.irq
 		.receiver2_irq (irq_mapper_receiver2_irq),       // receiver2.irq
 		.receiver3_irq (irq_mapper_receiver3_irq),       // receiver3.irq
+		.receiver4_irq (irq_mapper_receiver4_irq),       // receiver4.irq
 		.sender_irq    (niosii_irq_irq)                  //    sender.irq
 	);
 

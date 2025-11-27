@@ -10,15 +10,15 @@ cModel Technology
 Z0 dC:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/software/timer_display/obj/default/runtime/sim/mentor
 vtimer_display_mm_interconnect_0_cmd_demux
 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-!s110 1764122448
+!s110 1764213829
 !i10b 1
-!s100 `PQF<oVdF2]Hn6d;faYSY3
-IL1a6eAU74b6QdV]F5]=oC3
+!s100 5nXj>RD7LCMiYV;7dBoL71
+IjQ6Rj46l`4d]F6MfQ?ZkA0
 VDg1SIo80bB@j0V0VzS_@n1
 !s105 timer_display_mm_interconnect_0_cmd_demux_sv_unit
 S1
 R0
-w1764121411
+w1764213787
 8C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_mm_interconnect_0_cmd_demux.sv
 FC:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_mm_interconnect_0_cmd_demux.sv
 L0 43
@@ -26,7 +26,7 @@ OV;L;10.5b;63
 r1
 !s85 0
 31
-!s108 1764122448.000000
+!s108 1764213829.000000
 !s107 C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_mm_interconnect_0_cmd_demux.sv|
 !s90 -reportprogress|300|-sv|C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_mm_interconnect_0_cmd_demux.sv|-L|altera_common_sv_packages|-work|cmd_demux|
 !i113 1

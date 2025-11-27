@@ -12,7 +12,7 @@
 # or its authorized distributors. Please refer to the applicable 
 # agreement for further details.
 
-# ACDS 18.1 625 win32 2025.11.25.19:43:32
+# ACDS 18.1 625 win32 2025.11.26.21:23:08
 
 # ----------------------------------------
 # vcsmx - auto-generated simulation script
@@ -107,7 +107,7 @@
 # within the Quartus project, and generate a unified
 # script which supports all the Altera IP within the design.
 # ----------------------------------------
-# ACDS 18.1 625 win32 2025.11.25.19:43:32
+# ACDS 18.1 625 win32 2025.11.26.21:23:08
 # ----------------------------------------
 # initialize variables
 TOP_LEVEL_NAME="timer_display_tb"
@@ -172,12 +172,12 @@ mkdir -p ./libraries/irq_mapper/
 mkdir -p ./libraries/mm_interconnect_0/
 mkdir -p ./libraries/UART/
 mkdir -p ./libraries/TIMER/
-mkdir -p ./libraries/RESET_BUTTON/
 mkdir -p ./libraries/RAM/
+mkdir -p ./libraries/PAUSE_BUTTON/
 mkdir -p ./libraries/NIOSII/
 mkdir -p ./libraries/DISPLAY/
-mkdir -p ./libraries/timer_display_inst_reset_button_bfm/
 mkdir -p ./libraries/timer_display_inst_reset_bfm/
+mkdir -p ./libraries/timer_display_inst_pause_button_bfm/
 mkdir -p ./libraries/timer_display_inst_display_7_segments_bfm/
 mkdir -p ./libraries/timer_display_inst_clk_bfm/
 mkdir -p ./libraries/timer_display_inst/
@@ -260,12 +260,12 @@ if [ $SKIP_COM -eq 0 ]; then
   vlogan +v2k $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS           "$QSYS_SIMDIR/timer_display_tb/simulation/submodules/timer_display_mm_interconnect_0.v"                                    -work mm_interconnect_0                        
   vlogan +v2k $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS           "$QSYS_SIMDIR/timer_display_tb/simulation/submodules/timer_display_UART.v"                                                 -work UART                                     
   vlogan +v2k $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS           "$QSYS_SIMDIR/timer_display_tb/simulation/submodules/timer_display_TIMER.v"                                                -work TIMER                                    
-  vlogan +v2k $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS           "$QSYS_SIMDIR/timer_display_tb/simulation/submodules/timer_display_RESET_BUTTON.v"                                         -work RESET_BUTTON                             
   vlogan +v2k $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS           "$QSYS_SIMDIR/timer_display_tb/simulation/submodules/timer_display_RAM.v"                                                  -work RAM                                      
+  vlogan +v2k $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS           "$QSYS_SIMDIR/timer_display_tb/simulation/submodules/timer_display_PAUSE_BUTTON.v"                                         -work PAUSE_BUTTON                             
   vlogan +v2k $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS           "$QSYS_SIMDIR/timer_display_tb/simulation/submodules/timer_display_NIOSII.v"                                               -work NIOSII                                   
   vlogan +v2k $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS           "$QSYS_SIMDIR/timer_display_tb/simulation/submodules/timer_display_DISPLAY.v"                                              -work DISPLAY                                  
-  vlogan +v2k -sverilog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/timer_display_tb/simulation/submodules/altera_conduit_bfm_0002.sv"                                           -work timer_display_inst_reset_button_bfm      
   vlogan +v2k -sverilog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/timer_display_tb/simulation/submodules/altera_avalon_reset_source.sv"                                        -work timer_display_inst_reset_bfm             
+  vlogan +v2k -sverilog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/timer_display_tb/simulation/submodules/altera_conduit_bfm_0002.sv"                                           -work timer_display_inst_pause_button_bfm      
   vlogan +v2k -sverilog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/timer_display_tb/simulation/submodules/altera_conduit_bfm.sv"                                                -work timer_display_inst_display_7_segments_bfm
   vlogan +v2k -sverilog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/timer_display_tb/simulation/submodules/altera_avalon_clock_source.sv"                                        -work timer_display_inst_clk_bfm               
   vlogan +v2k $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS           "$QSYS_SIMDIR/timer_display_tb/simulation/submodules/timer_display.v"                                                      -work timer_display_inst                       

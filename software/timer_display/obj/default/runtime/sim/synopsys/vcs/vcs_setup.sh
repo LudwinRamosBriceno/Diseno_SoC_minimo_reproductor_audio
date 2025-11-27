@@ -12,7 +12,7 @@
 # or its authorized distributors. Please refer to the applicable 
 # agreement for further details.
 
-# ACDS 18.1 625 win32 2025.11.25.19:45:13
+# ACDS 18.1 625 win32 2025.11.26.20:07:21
 
 # ----------------------------------------
 # vcs - auto-generated simulation script
@@ -94,7 +94,7 @@
 # within the Quartus project, and generate a unified
 # script which supports all the Altera IP within the design.
 # ----------------------------------------
-# ACDS 18.1 625 win32 2025.11.25.19:45:13
+# ACDS 18.1 625 win32 2025.11.26.20:07:21
 # ----------------------------------------
 # initialize variables
 TOP_LEVEL_NAME="timer_display_tb"
@@ -187,12 +187,12 @@ vcs -lca -timescale=1ps/1ps -sverilog +verilog2001ext+.v -ntb_opts dtm $ELAB_OPT
   C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_mm_interconnect_0.v \
   C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_UART.v \
   C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_TIMER.v \
-  C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_RESET_BUTTON.v \
   C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_RAM.v \
+  C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_PAUSE_BUTTON.v \
   C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_NIOSII.v \
   C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_DISPLAY.v \
-  C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/altera_conduit_bfm_0002.sv \
   C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/altera_avalon_reset_source.sv \
+  C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/altera_conduit_bfm_0002.sv \
   C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/altera_conduit_bfm.sv \
   C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/altera_avalon_clock_source.sv \
   C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display.v \

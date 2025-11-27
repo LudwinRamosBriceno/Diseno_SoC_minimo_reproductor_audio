@@ -10,15 +10,15 @@ cModel Technology
 Z0 dC:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/software/timer_display/obj/default/runtime/sim/mentor
 vtimer_display_irq_mapper
 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-!s110 1764122449
+!s110 1764213831
 !i10b 1
-!s100 nK3`L5CZYDV^E82b;LM;>2
-I969KBnk0@EbRC]LLCzF[M0
+!s100 0b4?8?ZDQiT2z;QTd:j]T3
+I8^XjkD8cJV0cEl8;DIoYD3
 VDg1SIo80bB@j0V0VzS_@n1
 !s105 timer_display_irq_mapper_sv_unit
 S1
 R0
-w1764121409
+w1764213786
 8C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_irq_mapper.sv
 FC:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_irq_mapper.sv
 L0 31
@@ -26,7 +26,7 @@ OV;L;10.5b;63
 r1
 !s85 0
 31
-!s108 1764122449.000000
+!s108 1764213831.000000
 !s107 C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_irq_mapper.sv|
 !s90 -reportprogress|300|-sv|C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_irq_mapper.sv|-L|altera_common_sv_packages|-work|irq_mapper|
 !i113 1

@@ -50,13 +50,13 @@ reg     [  3: 0] control_register;
 wire             control_wr_strobe;
 reg              counter_is_running;
 wire             counter_is_zero;
-wire    [ 15: 0] counter_load_value;
-reg     [ 15: 0] counter_snapshot;
+wire    [ 25: 0] counter_load_value;
+reg     [ 25: 0] counter_snapshot;
 reg              delayed_unxcounter_is_zeroxx0;
 wire             do_start_counter;
 wire             do_stop_counter;
 reg              force_reload;
-reg     [ 15: 0] internal_counter;
+reg     [ 25: 0] internal_counter;
 wire             irq;
 wire             period_h_wr_strobe;
 wire             period_l_wr_strobe;
@@ -75,7 +75,7 @@ reg              timeout_occurred;
   always @(posedge clk or negedge reset_n)
     begin
       if (reset_n == 0)
-          internal_counter <= 16'hC34F;
+          internal_counter <= 26'h2FAF07F;
       else if (counter_is_running || force_reload)
           if (counter_is_zero    || force_reload)
               internal_counter <= counter_load_value;
@@ -85,7 +85,7 @@ reg              timeout_occurred;
 
 
   assign counter_is_zero = internal_counter == 0;
-  assign counter_load_value = 16'hC34F;
+  assign counter_load_value = 26'h2FAF07F;
   always @(posedge clk or negedge reset_n)
     begin
       if (reset_n == 0)

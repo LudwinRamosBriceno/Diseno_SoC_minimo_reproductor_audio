@@ -8,6 +8,7 @@ module timer_display_tb (
 
 	wire         timer_display_inst_clk_bfm_clk_clk;                 // timer_display_inst_clk_bfm:clk -> [timer_display_inst:clk_clk, timer_display_inst_reset_bfm:clk]
 	wire  [27:0] timer_display_inst_display_7_segments_export;       // timer_display_inst:display_7_segments_export -> timer_display_inst_display_7_segments_bfm:sig_export
+	wire   [0:0] timer_display_inst_pause_button_bfm_conduit_export; // timer_display_inst_pause_button_bfm:sig_export -> timer_display_inst:pause_button_export
 	wire   [0:0] timer_display_inst_reset_button_bfm_conduit_export; // timer_display_inst_reset_button_bfm:sig_export -> timer_display_inst:reset_button_export
 	wire   [0:0] timer_display_inst_start_button_bfm_conduit_export; // timer_display_inst_start_button_bfm:sig_export -> timer_display_inst:start_button_export
 	wire         timer_display_inst_reset_bfm_reset_reset;           // timer_display_inst_reset_bfm:reset -> timer_display_inst:reset_reset_n
@@ -15,6 +16,7 @@ module timer_display_tb (
 	timer_display timer_display_inst (
 		.clk_clk                   (timer_display_inst_clk_bfm_clk_clk),                 //                clk.clk
 		.display_7_segments_export (timer_display_inst_display_7_segments_export),       // display_7_segments.export
+		.pause_button_export       (timer_display_inst_pause_button_bfm_conduit_export), //       pause_button.export
 		.reset_reset_n             (timer_display_inst_reset_bfm_reset_reset),           //              reset.reset_n
 		.reset_button_export       (timer_display_inst_reset_button_bfm_conduit_export), //       reset_button.export
 		.start_button_export       (timer_display_inst_start_button_bfm_conduit_export)  //       start_button.export
@@ -29,6 +31,10 @@ module timer_display_tb (
 
 	altera_conduit_bfm timer_display_inst_display_7_segments_bfm (
 		.sig_export (timer_display_inst_display_7_segments_export)  // conduit.export
+	);
+
+	altera_conduit_bfm_0002 timer_display_inst_pause_button_bfm (
+		.sig_export (timer_display_inst_pause_button_bfm_conduit_export)  // conduit.export
 	);
 
 	altera_avalon_reset_source #(

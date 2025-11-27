@@ -43,186 +43,186 @@
 # [exec] dev_com
 # [exec] com
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:00:48 on Nov 25,2025
+# Start time: 21:23:48 on Nov 26,2025
 # vlog -reportprogress 300 -sv C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/verbosity_pkg.sv -work altera_common_sv_packages 
 # -- Compiling package verbosity_pkg
 # 
 # Top level modules:
 # 	--none--
-# End time: 20:00:48 on Nov 25,2025, Elapsed time: 0:00:00
+# End time: 21:23:48 on Nov 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:00:48 on Nov 25,2025
+# Start time: 21:23:48 on Nov 26,2025
 # vlog -reportprogress 300 -sv C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv -L altera_common_sv_packages -work error_adapter_0 
 # -- Compiling module timer_display_mm_interconnect_0_avalon_st_adapter_error_adapter_0
 # 
 # Top level modules:
 # 	timer_display_mm_interconnect_0_avalon_st_adapter_error_adapter_0
-# End time: 20:00:48 on Nov 25,2025, Elapsed time: 0:00:00
+# End time: 21:23:48 on Nov 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:00:48 on Nov 25,2025
+# Start time: 21:23:48 on Nov 26,2025
 # vlog -reportprogress 300 C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_mm_interconnect_0_avalon_st_adapter.v -work avalon_st_adapter 
 # -- Compiling module timer_display_mm_interconnect_0_avalon_st_adapter
 # 
 # Top level modules:
 # 	timer_display_mm_interconnect_0_avalon_st_adapter
-# End time: 20:00:48 on Nov 25,2025, Elapsed time: 0:00:00
+# End time: 21:23:48 on Nov 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:00:48 on Nov 25,2025
+# Start time: 21:23:48 on Nov 26,2025
 # vlog -reportprogress 300 -sv C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_mm_interconnect_0_rsp_mux_001.sv -L altera_common_sv_packages -work rsp_mux_001 
 # -- Compiling module timer_display_mm_interconnect_0_rsp_mux_001
 # 
 # Top level modules:
 # 	timer_display_mm_interconnect_0_rsp_mux_001
-# End time: 20:00:48 on Nov 25,2025, Elapsed time: 0:00:00
+# End time: 21:23:48 on Nov 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:00:48 on Nov 25,2025
+# Start time: 21:23:49 on Nov 26,2025
 # vlog -reportprogress 300 -sv C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/altera_merlin_arbitrator.sv -L altera_common_sv_packages -work rsp_mux_001 
 # -- Compiling module altera_merlin_arbitrator
 # -- Compiling module altera_merlin_arb_adder
 # 
 # Top level modules:
 # 	altera_merlin_arbitrator
-# End time: 20:00:48 on Nov 25,2025, Elapsed time: 0:00:00
+# End time: 21:23:49 on Nov 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:00:48 on Nov 25,2025
+# Start time: 21:23:49 on Nov 26,2025
 # vlog -reportprogress 300 -sv C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_mm_interconnect_0_rsp_mux.sv -L altera_common_sv_packages -work rsp_mux 
 # -- Compiling module timer_display_mm_interconnect_0_rsp_mux
 # 
 # Top level modules:
 # 	timer_display_mm_interconnect_0_rsp_mux
-# End time: 20:00:48 on Nov 25,2025, Elapsed time: 0:00:00
+# End time: 21:23:49 on Nov 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:00:48 on Nov 25,2025
+# Start time: 21:23:49 on Nov 26,2025
 # vlog -reportprogress 300 -sv C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/altera_merlin_arbitrator.sv -L altera_common_sv_packages -work rsp_mux 
 # -- Compiling module altera_merlin_arbitrator
 # -- Compiling module altera_merlin_arb_adder
 # 
 # Top level modules:
 # 	altera_merlin_arbitrator
-# End time: 20:00:48 on Nov 25,2025, Elapsed time: 0:00:00
+# End time: 21:23:49 on Nov 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:00:48 on Nov 25,2025
+# Start time: 21:23:49 on Nov 26,2025
 # vlog -reportprogress 300 -sv C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_mm_interconnect_0_rsp_demux.sv -L altera_common_sv_packages -work rsp_demux 
 # -- Compiling module timer_display_mm_interconnect_0_rsp_demux
 # 
 # Top level modules:
 # 	timer_display_mm_interconnect_0_rsp_demux
-# End time: 20:00:48 on Nov 25,2025, Elapsed time: 0:00:00
+# End time: 21:23:49 on Nov 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:00:48 on Nov 25,2025
+# Start time: 21:23:49 on Nov 26,2025
 # vlog -reportprogress 300 -sv C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_mm_interconnect_0_cmd_mux_001.sv -L altera_common_sv_packages -work cmd_mux_001 
 # -- Compiling module timer_display_mm_interconnect_0_cmd_mux_001
 # 
 # Top level modules:
 # 	timer_display_mm_interconnect_0_cmd_mux_001
-# End time: 20:00:48 on Nov 25,2025, Elapsed time: 0:00:00
+# End time: 21:23:49 on Nov 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:00:48 on Nov 25,2025
+# Start time: 21:23:49 on Nov 26,2025
 # vlog -reportprogress 300 -sv C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/altera_merlin_arbitrator.sv -L altera_common_sv_packages -work cmd_mux_001 
 # -- Compiling module altera_merlin_arbitrator
 # -- Compiling module altera_merlin_arb_adder
 # 
 # Top level modules:
 # 	altera_merlin_arbitrator
-# End time: 20:00:48 on Nov 25,2025, Elapsed time: 0:00:00
+# End time: 21:23:49 on Nov 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:00:48 on Nov 25,2025
+# Start time: 21:23:49 on Nov 26,2025
 # vlog -reportprogress 300 -sv C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_mm_interconnect_0_cmd_mux.sv -L altera_common_sv_packages -work cmd_mux 
 # -- Compiling module timer_display_mm_interconnect_0_cmd_mux
 # 
 # Top level modules:
 # 	timer_display_mm_interconnect_0_cmd_mux
-# End time: 20:00:48 on Nov 25,2025, Elapsed time: 0:00:00
+# End time: 21:23:49 on Nov 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:00:48 on Nov 25,2025
+# Start time: 21:23:49 on Nov 26,2025
 # vlog -reportprogress 300 -sv C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/altera_merlin_arbitrator.sv -L altera_common_sv_packages -work cmd_mux 
 # -- Compiling module altera_merlin_arbitrator
 # -- Compiling module altera_merlin_arb_adder
 # 
 # Top level modules:
 # 	altera_merlin_arbitrator
-# End time: 20:00:48 on Nov 25,2025, Elapsed time: 0:00:00
+# End time: 21:23:49 on Nov 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:00:48 on Nov 25,2025
+# Start time: 21:23:49 on Nov 26,2025
 # vlog -reportprogress 300 -sv C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_mm_interconnect_0_cmd_demux_001.sv -L altera_common_sv_packages -work cmd_demux_001 
 # -- Compiling module timer_display_mm_interconnect_0_cmd_demux_001
 # 
 # Top level modules:
 # 	timer_display_mm_interconnect_0_cmd_demux_001
-# End time: 20:00:48 on Nov 25,2025, Elapsed time: 0:00:00
+# End time: 21:23:49 on Nov 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:00:48 on Nov 25,2025
+# Start time: 21:23:49 on Nov 26,2025
 # vlog -reportprogress 300 -sv C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_mm_interconnect_0_cmd_demux.sv -L altera_common_sv_packages -work cmd_demux 
 # -- Compiling module timer_display_mm_interconnect_0_cmd_demux
 # 
 # Top level modules:
 # 	timer_display_mm_interconnect_0_cmd_demux
-# End time: 20:00:48 on Nov 25,2025, Elapsed time: 0:00:00
+# End time: 21:23:49 on Nov 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:00:48 on Nov 25,2025
+# Start time: 21:23:49 on Nov 26,2025
 # vlog -reportprogress 300 -sv C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_mm_interconnect_0_router_003.sv -L altera_common_sv_packages -work router_003 
 # -- Compiling module timer_display_mm_interconnect_0_router_003_default_decode
 # -- Compiling module timer_display_mm_interconnect_0_router_003
 # 
 # Top level modules:
 # 	timer_display_mm_interconnect_0_router_003
-# End time: 20:00:48 on Nov 25,2025, Elapsed time: 0:00:00
+# End time: 21:23:49 on Nov 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:00:48 on Nov 25,2025
+# Start time: 21:23:49 on Nov 26,2025
 # vlog -reportprogress 300 -sv C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_mm_interconnect_0_router_002.sv -L altera_common_sv_packages -work router_002 
 # -- Compiling module timer_display_mm_interconnect_0_router_002_default_decode
 # -- Compiling module timer_display_mm_interconnect_0_router_002
 # 
 # Top level modules:
 # 	timer_display_mm_interconnect_0_router_002
-# End time: 20:00:48 on Nov 25,2025, Elapsed time: 0:00:00
+# End time: 21:23:49 on Nov 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:00:48 on Nov 25,2025
+# Start time: 21:23:49 on Nov 26,2025
 # vlog -reportprogress 300 -sv C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_mm_interconnect_0_router_001.sv -L altera_common_sv_packages -work router_001 
 # -- Compiling module timer_display_mm_interconnect_0_router_001_default_decode
 # -- Compiling module timer_display_mm_interconnect_0_router_001
 # 
 # Top level modules:
 # 	timer_display_mm_interconnect_0_router_001
-# End time: 20:00:49 on Nov 25,2025, Elapsed time: 0:00:01
+# End time: 21:23:50 on Nov 26,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:00:49 on Nov 25,2025
+# Start time: 21:23:50 on Nov 26,2025
 # vlog -reportprogress 300 -sv C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_mm_interconnect_0_router.sv -L altera_common_sv_packages -work router 
 # -- Compiling module timer_display_mm_interconnect_0_router_default_decode
 # -- Compiling module timer_display_mm_interconnect_0_router
 # 
 # Top level modules:
 # 	timer_display_mm_interconnect_0_router
-# End time: 20:00:49 on Nov 25,2025, Elapsed time: 0:00:00
+# End time: 21:23:50 on Nov 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:00:49 on Nov 25,2025
+# Start time: 21:23:50 on Nov 26,2025
 # vlog -reportprogress 300 C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/altera_avalon_sc_fifo.v -work UART_avalon_jtag_slave_agent_rsp_fifo 
 # -- Compiling module altera_avalon_sc_fifo
 # 
 # Top level modules:
 # 	altera_avalon_sc_fifo
-# End time: 20:00:49 on Nov 25,2025, Elapsed time: 0:00:00
+# End time: 21:23:50 on Nov 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:00:49 on Nov 25,2025
+# Start time: 21:23:50 on Nov 26,2025
 # vlog -reportprogress 300 -sv C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/altera_merlin_slave_agent.sv -L altera_common_sv_packages -work UART_avalon_jtag_slave_agent 
 # -- Compiling module altera_merlin_slave_agent
 # ** Warning: C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/altera_merlin_slave_agent.sv(618): (vlog-2186) SystemVerilog testbench feature
@@ -238,46 +238,46 @@
 # 
 # Top level modules:
 # 	altera_merlin_slave_agent
-# End time: 20:00:49 on Nov 25,2025, Elapsed time: 0:00:00
+# End time: 21:23:50 on Nov 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 6
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:00:49 on Nov 25,2025
+# Start time: 21:23:50 on Nov 26,2025
 # vlog -reportprogress 300 -sv C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/altera_merlin_burst_uncompressor.sv -L altera_common_sv_packages -work UART_avalon_jtag_slave_agent 
 # -- Compiling module altera_merlin_burst_uncompressor
 # 
 # Top level modules:
 # 	altera_merlin_burst_uncompressor
-# End time: 20:00:49 on Nov 25,2025, Elapsed time: 0:00:00
+# End time: 21:23:50 on Nov 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:00:49 on Nov 25,2025
+# Start time: 21:23:50 on Nov 26,2025
 # vlog -reportprogress 300 -sv C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/altera_merlin_master_agent.sv -L altera_common_sv_packages -work NIOSII_data_master_agent 
 # -- Compiling module altera_merlin_master_agent
 # 
 # Top level modules:
 # 	altera_merlin_master_agent
-# End time: 20:00:49 on Nov 25,2025, Elapsed time: 0:00:00
+# End time: 21:23:50 on Nov 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:00:49 on Nov 25,2025
+# Start time: 21:23:50 on Nov 26,2025
 # vlog -reportprogress 300 -sv C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/altera_merlin_slave_translator.sv -L altera_common_sv_packages -work UART_avalon_jtag_slave_translator 
 # -- Compiling module altera_merlin_slave_translator
 # 
 # Top level modules:
 # 	altera_merlin_slave_translator
-# End time: 20:00:49 on Nov 25,2025, Elapsed time: 0:00:00
+# End time: 21:23:50 on Nov 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:00:49 on Nov 25,2025
+# Start time: 21:23:50 on Nov 26,2025
 # vlog -reportprogress 300 -sv C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/altera_merlin_master_translator.sv -L altera_common_sv_packages -work NIOSII_data_master_translator 
 # -- Compiling module altera_merlin_master_translator
 # 
 # Top level modules:
 # 	altera_merlin_master_translator
-# End time: 20:00:49 on Nov 25,2025, Elapsed time: 0:00:00
+# End time: 21:23:50 on Nov 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:00:49 on Nov 25,2025
+# Start time: 21:23:50 on Nov 26,2025
 # vlog -reportprogress 300 C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_NIOSII_cpu.v -work cpu 
 # -- Compiling module timer_display_NIOSII_cpu_register_bank_a_module
 # -- Compiling module timer_display_NIOSII_cpu_register_bank_b_module
@@ -304,82 +304,82 @@
 # Top level modules:
 # 	timer_display_NIOSII_cpu_nios2_performance_monitors
 # 	timer_display_NIOSII_cpu
-# End time: 20:00:49 on Nov 25,2025, Elapsed time: 0:00:00
+# End time: 21:23:51 on Nov 26,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:00:49 on Nov 25,2025
+# Start time: 21:23:51 on Nov 26,2025
 # vlog -reportprogress 300 C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_NIOSII_cpu_debug_slave_sysclk.v -work cpu 
 # -- Compiling module timer_display_NIOSII_cpu_debug_slave_sysclk
 # 
 # Top level modules:
 # 	timer_display_NIOSII_cpu_debug_slave_sysclk
-# End time: 20:00:49 on Nov 25,2025, Elapsed time: 0:00:00
+# End time: 21:23:51 on Nov 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:00:49 on Nov 25,2025
+# Start time: 21:23:51 on Nov 26,2025
 # vlog -reportprogress 300 C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_NIOSII_cpu_debug_slave_tck.v -work cpu 
 # -- Compiling module timer_display_NIOSII_cpu_debug_slave_tck
 # 
 # Top level modules:
 # 	timer_display_NIOSII_cpu_debug_slave_tck
-# End time: 20:00:49 on Nov 25,2025, Elapsed time: 0:00:00
+# End time: 21:23:51 on Nov 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:00:49 on Nov 25,2025
+# Start time: 21:23:51 on Nov 26,2025
 # vlog -reportprogress 300 C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_NIOSII_cpu_debug_slave_wrapper.v -work cpu 
 # -- Compiling module timer_display_NIOSII_cpu_debug_slave_wrapper
 # 
 # Top level modules:
 # 	timer_display_NIOSII_cpu_debug_slave_wrapper
-# End time: 20:00:49 on Nov 25,2025, Elapsed time: 0:00:00
+# End time: 21:23:51 on Nov 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:00:49 on Nov 25,2025
+# Start time: 21:23:51 on Nov 26,2025
 # vlog -reportprogress 300 C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_NIOSII_cpu_test_bench.v -work cpu 
 # -- Compiling module timer_display_NIOSII_cpu_test_bench
 # 
 # Top level modules:
 # 	timer_display_NIOSII_cpu_test_bench
-# End time: 20:00:49 on Nov 25,2025, Elapsed time: 0:00:00
+# End time: 21:23:51 on Nov 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:00:49 on Nov 25,2025
+# Start time: 21:23:51 on Nov 26,2025
 # vlog -reportprogress 300 C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/altera_reset_controller.v -work rst_controller 
 # -- Compiling module altera_reset_controller
 # 
 # Top level modules:
 # 	altera_reset_controller
-# End time: 20:00:49 on Nov 25,2025, Elapsed time: 0:00:00
+# End time: 21:23:51 on Nov 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:00:49 on Nov 25,2025
+# Start time: 21:23:51 on Nov 26,2025
 # vlog -reportprogress 300 C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/altera_reset_synchronizer.v -work rst_controller 
 # -- Compiling module altera_reset_synchronizer
 # 
 # Top level modules:
 # 	altera_reset_synchronizer
-# End time: 20:00:49 on Nov 25,2025, Elapsed time: 0:00:00
+# End time: 21:23:51 on Nov 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:00:49 on Nov 25,2025
+# Start time: 21:23:51 on Nov 26,2025
 # vlog -reportprogress 300 -sv C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_irq_mapper.sv -L altera_common_sv_packages -work irq_mapper 
 # -- Compiling module timer_display_irq_mapper
 # 
 # Top level modules:
 # 	timer_display_irq_mapper
-# End time: 20:00:49 on Nov 25,2025, Elapsed time: 0:00:00
+# End time: 21:23:51 on Nov 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:00:49 on Nov 25,2025
+# Start time: 21:23:51 on Nov 26,2025
 # vlog -reportprogress 300 C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_mm_interconnect_0.v -work mm_interconnect_0 
 # -- Compiling module timer_display_mm_interconnect_0
 # 
 # Top level modules:
 # 	timer_display_mm_interconnect_0
-# End time: 20:00:49 on Nov 25,2025, Elapsed time: 0:00:00
+# End time: 21:23:51 on Nov 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:00:49 on Nov 25,2025
+# Start time: 21:23:51 on Nov 26,2025
 # vlog -reportprogress 300 C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_UART.v -work UART 
 # -- Compiling module timer_display_UART_sim_scfifo_w
 # -- Compiling module timer_display_UART_scfifo_w
@@ -389,114 +389,114 @@
 # 
 # Top level modules:
 # 	timer_display_UART
-# End time: 20:00:49 on Nov 25,2025, Elapsed time: 0:00:00
+# End time: 21:23:51 on Nov 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:00:49 on Nov 25,2025
+# Start time: 21:23:51 on Nov 26,2025
 # vlog -reportprogress 300 C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_TIMER.v -work TIMER 
 # -- Compiling module timer_display_TIMER
 # 
 # Top level modules:
 # 	timer_display_TIMER
-# End time: 20:00:49 on Nov 25,2025, Elapsed time: 0:00:00
+# End time: 21:23:51 on Nov 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:00:49 on Nov 25,2025
-# vlog -reportprogress 300 C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_RESET_BUTTON.v -work RESET_BUTTON 
-# -- Compiling module timer_display_RESET_BUTTON
-# 
-# Top level modules:
-# 	timer_display_RESET_BUTTON
-# End time: 20:00:50 on Nov 25,2025, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:00:50 on Nov 25,2025
+# Start time: 21:23:51 on Nov 26,2025
 # vlog -reportprogress 300 C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_RAM.v -work RAM 
 # -- Compiling module timer_display_RAM
 # 
 # Top level modules:
 # 	timer_display_RAM
-# End time: 20:00:50 on Nov 25,2025, Elapsed time: 0:00:00
+# End time: 21:23:51 on Nov 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:00:50 on Nov 25,2025
+# Start time: 21:23:52 on Nov 26,2025
+# vlog -reportprogress 300 C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_PAUSE_BUTTON.v -work PAUSE_BUTTON 
+# -- Compiling module timer_display_PAUSE_BUTTON
+# 
+# Top level modules:
+# 	timer_display_PAUSE_BUTTON
+# End time: 21:23:52 on Nov 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:23:52 on Nov 26,2025
 # vlog -reportprogress 300 C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_NIOSII.v -work NIOSII 
 # -- Compiling module timer_display_NIOSII
 # 
 # Top level modules:
 # 	timer_display_NIOSII
-# End time: 20:00:50 on Nov 25,2025, Elapsed time: 0:00:00
+# End time: 21:23:52 on Nov 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:00:50 on Nov 25,2025
+# Start time: 21:23:52 on Nov 26,2025
 # vlog -reportprogress 300 C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_DISPLAY.v -work DISPLAY 
 # -- Compiling module timer_display_DISPLAY
 # 
 # Top level modules:
 # 	timer_display_DISPLAY
-# End time: 20:00:50 on Nov 25,2025, Elapsed time: 0:00:00
+# End time: 21:23:52 on Nov 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:00:50 on Nov 25,2025
-# vlog -reportprogress 300 -sv C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/altera_conduit_bfm_0002.sv -L altera_common_sv_packages -work timer_display_inst_reset_button_bfm 
-# -- Compiling module altera_conduit_bfm_0002
-# -- Importing package altera_common_sv_packages.verbosity_pkg
-# 
-# Top level modules:
-# 	altera_conduit_bfm_0002
-# End time: 20:00:50 on Nov 25,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:00:50 on Nov 25,2025
+# Start time: 21:23:52 on Nov 26,2025
 # vlog -reportprogress 300 -sv C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/altera_avalon_reset_source.sv -L altera_common_sv_packages -work timer_display_inst_reset_bfm 
 # -- Compiling module altera_avalon_reset_source
 # -- Importing package altera_common_sv_packages.verbosity_pkg
 # 
 # Top level modules:
 # 	altera_avalon_reset_source
-# End time: 20:00:50 on Nov 25,2025, Elapsed time: 0:00:00
+# End time: 21:23:52 on Nov 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:00:50 on Nov 25,2025
+# Start time: 21:23:52 on Nov 26,2025
+# vlog -reportprogress 300 -sv C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/altera_conduit_bfm_0002.sv -L altera_common_sv_packages -work timer_display_inst_pause_button_bfm 
+# -- Compiling module altera_conduit_bfm_0002
+# -- Importing package altera_common_sv_packages.verbosity_pkg
+# 
+# Top level modules:
+# 	altera_conduit_bfm_0002
+# End time: 21:23:52 on Nov 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:23:52 on Nov 26,2025
 # vlog -reportprogress 300 -sv C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/altera_conduit_bfm.sv -L altera_common_sv_packages -work timer_display_inst_display_7_segments_bfm 
 # -- Compiling module altera_conduit_bfm
 # -- Importing package altera_common_sv_packages.verbosity_pkg
 # 
 # Top level modules:
 # 	altera_conduit_bfm
-# End time: 20:00:50 on Nov 25,2025, Elapsed time: 0:00:00
+# End time: 21:23:52 on Nov 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:00:50 on Nov 25,2025
+# Start time: 21:23:52 on Nov 26,2025
 # vlog -reportprogress 300 -sv C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/altera_avalon_clock_source.sv -L altera_common_sv_packages -work timer_display_inst_clk_bfm 
 # -- Compiling module altera_avalon_clock_source
 # -- Importing package altera_common_sv_packages.verbosity_pkg
 # 
 # Top level modules:
 # 	altera_avalon_clock_source
-# End time: 20:00:50 on Nov 25,2025, Elapsed time: 0:00:00
+# End time: 21:23:52 on Nov 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:00:50 on Nov 25,2025
+# Start time: 21:23:52 on Nov 26,2025
 # vlog -reportprogress 300 C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display.v -work timer_display_inst 
 # -- Compiling module timer_display
 # 
 # Top level modules:
 # 	timer_display
-# End time: 20:00:50 on Nov 25,2025, Elapsed time: 0:00:00
+# End time: 21:23:52 on Nov 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:00:50 on Nov 25,2025
+# Start time: 21:23:52 on Nov 26,2025
 # vlog -reportprogress 300 C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/timer_display_tb.v 
 # -- Compiling module timer_display_tb
 # 
 # Top level modules:
 # 	timer_display_tb
-# End time: 20:00:50 on Nov 25,2025, Elapsed time: 0:00:00
+# End time: 21:23:52 on Nov 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # [exec] elab
-# vsim -t ps -L work -L work_lib -L altera_common_sv_packages -L error_adapter_0 -L avalon_st_adapter -L rsp_mux_001 -L rsp_mux -L rsp_demux -L cmd_mux_001 -L cmd_mux -L cmd_demux_001 -L cmd_demux -L router_003 -L router_002 -L router_001 -L router -L UART_avalon_jtag_slave_agent_rsp_fifo -L UART_avalon_jtag_slave_agent -L NIOSII_data_master_agent -L UART_avalon_jtag_slave_translator -L NIOSII_data_master_translator -L cpu -L rst_controller -L irq_mapper -L mm_interconnect_0 -L UART -L TIMER -L RESET_BUTTON -L RAM -L NIOSII -L DISPLAY -L timer_display_inst_reset_button_bfm -L timer_display_inst_reset_bfm -L timer_display_inst_display_7_segments_bfm -L timer_display_inst_clk_bfm -L timer_display_inst -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver timer_display_tb 
-# Start time: 20:00:50 on Nov 25,2025
+# vsim -t ps -L work -L work_lib -L altera_common_sv_packages -L error_adapter_0 -L avalon_st_adapter -L rsp_mux_001 -L rsp_mux -L rsp_demux -L cmd_mux_001 -L cmd_mux -L cmd_demux_001 -L cmd_demux -L router_003 -L router_002 -L router_001 -L router -L UART_avalon_jtag_slave_agent_rsp_fifo -L UART_avalon_jtag_slave_agent -L NIOSII_data_master_agent -L UART_avalon_jtag_slave_translator -L NIOSII_data_master_translator -L cpu -L rst_controller -L irq_mapper -L mm_interconnect_0 -L UART -L TIMER -L RAM -L PAUSE_BUTTON -L NIOSII -L DISPLAY -L timer_display_inst_reset_bfm -L timer_display_inst_pause_button_bfm -L timer_display_inst_display_7_segments_bfm -L timer_display_inst_clk_bfm -L timer_display_inst -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver timer_display_tb 
+# Start time: 21:23:52 on Nov 26,2025
 # Loading work.timer_display_tb
 # Loading timer_display_inst.timer_display
 # Loading DISPLAY.timer_display_DISPLAY
@@ -527,8 +527,8 @@
 # Loading cpu.timer_display_NIOSII_cpu_debug_slave_wrapper
 # Loading cpu.timer_display_NIOSII_cpu_debug_slave_tck
 # Loading cpu.timer_display_NIOSII_cpu_debug_slave_sysclk
+# Loading PAUSE_BUTTON.timer_display_PAUSE_BUTTON
 # Loading RAM.timer_display_RAM
-# Loading RESET_BUTTON.timer_display_RESET_BUTTON
 # Loading TIMER.timer_display_TIMER
 # Loading UART.timer_display_UART
 # Loading UART.timer_display_UART_scfifo_w
@@ -571,8 +571,8 @@
 # Loading altera_common_sv_packages.verbosity_pkg
 # Loading timer_display_inst_clk_bfm.altera_avalon_clock_source
 # Loading timer_display_inst_display_7_segments_bfm.altera_conduit_bfm
+# Loading timer_display_inst_pause_button_bfm.altera_conduit_bfm_0002
 # Loading timer_display_inst_reset_bfm.altera_avalon_reset_source
-# Loading timer_display_inst_reset_button_bfm.altera_conduit_bfm_0002
 # Loading altera_mf_ver.altsyncram_body
 # Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
 # Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
@@ -654,12 +654,15 @@
 # ** Warning: (vsim-3722) C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_RAM.v(60): [TFMPC] - Missing connection for port 'addressstall_b'.
 # ** Warning: (vsim-3722) C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_RAM.v(60): [TFMPC] - Missing connection for port 'q_b'.
 # ** Warning: (vsim-3722) C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_RAM.v(60): [TFMPC] - Missing connection for port 'eccstatus'.
-# ** Warning: (vsim-3017) C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display.v(165): [TFMPC] - Too few port connections. Expected 12, found 10.
+# ** Warning: (vsim-3017) C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display.v(184): [TFMPC] - Too few port connections. Expected 12, found 10.
 #    Time: 0 ps  Iteration: 0  Instance: /timer_display_tb/timer_display_inst/uart File: C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_UART.v
-# ** Warning: (vsim-3722) C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display.v(165): [TFMPC] - Missing connection for port 'dataavailable'.
-# ** Warning: (vsim-3722) C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display.v(165): [TFMPC] - Missing connection for port 'readyfordata'.
+# ** Warning: (vsim-3722) C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display.v(184): [TFMPC] - Missing connection for port 'dataavailable'.
+# ** Warning: (vsim-3722) C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display.v(184): [TFMPC] - Missing connection for port 'readyfordata'.
 #  
-run 0.5ms
+add wave -position end  sim:/timer_display_tb/timer_display_inst_start_button_bfm_conduit_export
+add wave -position end  sim:/timer_display_tb/timer_display_inst_display_7_segments_export
+force -freeze sim:/timer_display_tb/timer_display_inst_start_button_bfm_conduit_export 1 0
+run 1ms
 # Warning: DONT_CARE value for read_during_write_mode_port_a is not supported in Stratix device family, it might cause incorrect behavioural simulation result
 # Time: 0  Instance: timer_display_tb.timer_display_inst.niosii.cpu.the_timer_display_NIOSII_cpu_nios2_oci.the_timer_display_NIOSII_cpu_nios2_ocimem.timer_display_NIOSII_cpu_ociram_sp_ram.the_altsyncram.m_default.altsyncram_inst
 # Warning: DONT_CARE value for read_during_write_mode_port_a is not supported in Stratix device family, it might cause incorrect behavioural simulation result
@@ -679,37 +682,14 @@ run 0.5ms
 #               990000: INFO: timer_display_tb.timer_display_inst_reset_bfm.reset_deassert: Reset deasserted
 # Initializing program! ...
 # Interruption for start button has been registered!
-# Interruption for reset button has been registered!
-# Waiting for start button! ...
-add wave -position end  sim:/timer_display_tb/timer_display_inst_start_button_bfm_conduit_export
-force -freeze sim:/timer_display_tb/timer_display_inst_start_button_bfm_conduit_export 1 0
-run 0.5ms
-force -freeze sim:/timer_display_tb/timer_display_inst_start_button_bfm_conduit_export 0 0
-add wave -position end  sim:/timer_display_tb/timer_display_inst_reset_bfm_reset_reset
-run 1ms
-# edge detected
-# Turning on the timer...
-force -freeze sim:/timer_display_tb/timer_display_inst_start_button_bfm_conduit_export 1 0
-run 4ms
-# INFO: SECONDS COUNT: 0
-# INFO: SECONDS COUNT: 1
-# INFO: SECONDS COUNT: 2
-# INFO: SECONDS COUNT: 3
-force -freeze sim:/timer_display_tb/timer_display_inst_reset_bfm_reset_reset 0 0
-run 0.5ms
-force -freeze sim:/timer_display_tb/timer_display_inst_reset_bfm_reset_reset 1 0
-run 1ms
-# Initializing program! ...
-# Interruption for start button has been registered!
+# Interruption for pause button has been registered!
 # Interruption for reset button has been registered!
 # Waiting for start button! ...
 force -freeze sim:/timer_display_tb/timer_display_inst_start_button_bfm_conduit_export 0 0
-run 1ms
+run 0.5ms
 # edge detected
 # Turning on the timer...
 force -freeze sim:/timer_display_tb/timer_display_inst_start_button_bfm_conduit_export 1 0
-run 2ms
-# INFO: SECONDS COUNT: 0
-# INFO: SECONDS COUNT: 1
-# End time: 20:09:16 on Nov 25,2025, Elapsed time: 0:08:26
+run 5ms
+# End time: 21:25:36 on Nov 26,2025, Elapsed time: 0:01:44
 # Errors: 0, Warnings: 75

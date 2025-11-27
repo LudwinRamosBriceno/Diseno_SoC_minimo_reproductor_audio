@@ -33,6 +33,14 @@
          type = "int";
       }
    }
+   element timer_display_inst_pause_button_bfm
+   {
+      datum _sortIndex
+      {
+         value = "4";
+         type = "int";
+      }
+   }
    element timer_display_inst_reset_bfm
    {
       datum _sortIndex
@@ -45,7 +53,7 @@
    {
       datum _sortIndex
       {
-         value = "4";
+         value = "5";
          type = "int";
       }
    }
@@ -53,7 +61,7 @@
    {
       datum _sortIndex
       {
-         value = "5";
+         value = "6";
          type = "int";
       }
    }
@@ -112,6 +120,17 @@
   <parameter name="SIGNAL_WIDTHS" value="28" />
  </module>
  <module
+   name="timer_display_inst_pause_button_bfm"
+   kind="altera_conduit_bfm"
+   version="18.1"
+   enabled="1">
+  <parameter name="CLOCKED_SIGNAL" value="false" />
+  <parameter name="ENABLE_RESET" value="false" />
+  <parameter name="SIGNAL_DIRECTIONS" value="output" />
+  <parameter name="SIGNAL_ROLES" value="export" />
+  <parameter name="SIGNAL_WIDTHS" value="1" />
+ </module>
+ <module
    name="timer_display_inst_reset_bfm"
    kind="altera_avalon_reset_source"
    version="18.1"
@@ -156,6 +175,17 @@
    version="18.1"
    start="timer_display_inst_display_7_segments_bfm.conduit"
    end="timer_display_inst.display_7_segments">
+  <parameter name="endPort" value="" />
+  <parameter name="endPortLSB" value="0" />
+  <parameter name="startPort" value="" />
+  <parameter name="startPortLSB" value="0" />
+  <parameter name="width" value="0" />
+ </connection>
+ <connection
+   kind="conduit"
+   version="18.1"
+   start="timer_display_inst_pause_button_bfm.conduit"
+   end="timer_display_inst.pause_button">
   <parameter name="endPort" value="" />
   <parameter name="endPortLSB" value="0" />
   <parameter name="startPort" value="" />

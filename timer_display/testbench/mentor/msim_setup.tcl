@@ -94,7 +94,7 @@
 # within the Quartus project, and generate a unified
 # script which supports all the Altera IP within the design.
 # ----------------------------------------
-# ACDS 18.1 625 win32 2025.11.25.19:43:32
+# ACDS 18.1 625 win32 2025.11.26.21:23:08
 
 # ----------------------------------------
 # Initialize variables
@@ -228,18 +228,18 @@ ensure_lib                                           ./libraries/UART/
 vmap       UART                                      ./libraries/UART/                                     
 ensure_lib                                           ./libraries/TIMER/                                    
 vmap       TIMER                                     ./libraries/TIMER/                                    
-ensure_lib                                           ./libraries/RESET_BUTTON/                             
-vmap       RESET_BUTTON                              ./libraries/RESET_BUTTON/                             
 ensure_lib                                           ./libraries/RAM/                                      
 vmap       RAM                                       ./libraries/RAM/                                      
+ensure_lib                                           ./libraries/PAUSE_BUTTON/                             
+vmap       PAUSE_BUTTON                              ./libraries/PAUSE_BUTTON/                             
 ensure_lib                                           ./libraries/NIOSII/                                   
 vmap       NIOSII                                    ./libraries/NIOSII/                                   
 ensure_lib                                           ./libraries/DISPLAY/                                  
 vmap       DISPLAY                                   ./libraries/DISPLAY/                                  
-ensure_lib                                           ./libraries/timer_display_inst_reset_button_bfm/      
-vmap       timer_display_inst_reset_button_bfm       ./libraries/timer_display_inst_reset_button_bfm/      
 ensure_lib                                           ./libraries/timer_display_inst_reset_bfm/             
 vmap       timer_display_inst_reset_bfm              ./libraries/timer_display_inst_reset_bfm/             
+ensure_lib                                           ./libraries/timer_display_inst_pause_button_bfm/      
+vmap       timer_display_inst_pause_button_bfm       ./libraries/timer_display_inst_pause_button_bfm/      
 ensure_lib                                           ./libraries/timer_display_inst_display_7_segments_bfm/
 vmap       timer_display_inst_display_7_segments_bfm ./libraries/timer_display_inst_display_7_segments_bfm/
 ensure_lib                                           ./libraries/timer_display_inst_clk_bfm/               
@@ -306,12 +306,12 @@ alias com {
   eval  vlog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/timer_display_tb/simulation/submodules/timer_display_mm_interconnect_0.v"                                                                 -work mm_interconnect_0                        
   eval  vlog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/timer_display_tb/simulation/submodules/timer_display_UART.v"                                                                              -work UART                                     
   eval  vlog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/timer_display_tb/simulation/submodules/timer_display_TIMER.v"                                                                             -work TIMER                                    
-  eval  vlog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/timer_display_tb/simulation/submodules/timer_display_RESET_BUTTON.v"                                                                      -work RESET_BUTTON                             
   eval  vlog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/timer_display_tb/simulation/submodules/timer_display_RAM.v"                                                                               -work RAM                                      
+  eval  vlog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/timer_display_tb/simulation/submodules/timer_display_PAUSE_BUTTON.v"                                                                      -work PAUSE_BUTTON                             
   eval  vlog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/timer_display_tb/simulation/submodules/timer_display_NIOSII.v"                                                                            -work NIOSII                                   
   eval  vlog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/timer_display_tb/simulation/submodules/timer_display_DISPLAY.v"                                                                           -work DISPLAY                                  
-  eval  vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/timer_display_tb/simulation/submodules/altera_conduit_bfm_0002.sv"                                           -L altera_common_sv_packages -work timer_display_inst_reset_button_bfm      
   eval  vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/timer_display_tb/simulation/submodules/altera_avalon_reset_source.sv"                                        -L altera_common_sv_packages -work timer_display_inst_reset_bfm             
+  eval  vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/timer_display_tb/simulation/submodules/altera_conduit_bfm_0002.sv"                                           -L altera_common_sv_packages -work timer_display_inst_pause_button_bfm      
   eval  vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/timer_display_tb/simulation/submodules/altera_conduit_bfm.sv"                                                -L altera_common_sv_packages -work timer_display_inst_display_7_segments_bfm
   eval  vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/timer_display_tb/simulation/submodules/altera_avalon_clock_source.sv"                                        -L altera_common_sv_packages -work timer_display_inst_clk_bfm               
   eval  vlog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/timer_display_tb/simulation/submodules/timer_display.v"                                                                                   -work timer_display_inst                       
@@ -322,14 +322,14 @@ alias com {
 # Elaborate top level design
 alias elab {
   echo "\[exec\] elab"
-  eval vsim -t ps $ELAB_OPTIONS $USER_DEFINED_ELAB_OPTIONS -L work -L work_lib -L altera_common_sv_packages -L error_adapter_0 -L avalon_st_adapter -L rsp_mux_001 -L rsp_mux -L rsp_demux -L cmd_mux_001 -L cmd_mux -L cmd_demux_001 -L cmd_demux -L router_003 -L router_002 -L router_001 -L router -L UART_avalon_jtag_slave_agent_rsp_fifo -L UART_avalon_jtag_slave_agent -L NIOSII_data_master_agent -L UART_avalon_jtag_slave_translator -L NIOSII_data_master_translator -L cpu -L rst_controller -L irq_mapper -L mm_interconnect_0 -L UART -L TIMER -L RESET_BUTTON -L RAM -L NIOSII -L DISPLAY -L timer_display_inst_reset_button_bfm -L timer_display_inst_reset_bfm -L timer_display_inst_display_7_segments_bfm -L timer_display_inst_clk_bfm -L timer_display_inst -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver $TOP_LEVEL_NAME
+  eval vsim -t ps $ELAB_OPTIONS $USER_DEFINED_ELAB_OPTIONS -L work -L work_lib -L altera_common_sv_packages -L error_adapter_0 -L avalon_st_adapter -L rsp_mux_001 -L rsp_mux -L rsp_demux -L cmd_mux_001 -L cmd_mux -L cmd_demux_001 -L cmd_demux -L router_003 -L router_002 -L router_001 -L router -L UART_avalon_jtag_slave_agent_rsp_fifo -L UART_avalon_jtag_slave_agent -L NIOSII_data_master_agent -L UART_avalon_jtag_slave_translator -L NIOSII_data_master_translator -L cpu -L rst_controller -L irq_mapper -L mm_interconnect_0 -L UART -L TIMER -L RAM -L PAUSE_BUTTON -L NIOSII -L DISPLAY -L timer_display_inst_reset_bfm -L timer_display_inst_pause_button_bfm -L timer_display_inst_display_7_segments_bfm -L timer_display_inst_clk_bfm -L timer_display_inst -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver $TOP_LEVEL_NAME
 }
 
 # ----------------------------------------
 # Elaborate the top level design with novopt option
 alias elab_debug {
   echo "\[exec\] elab_debug"
-  eval vsim -novopt -t ps $ELAB_OPTIONS $USER_DEFINED_ELAB_OPTIONS -L work -L work_lib -L altera_common_sv_packages -L error_adapter_0 -L avalon_st_adapter -L rsp_mux_001 -L rsp_mux -L rsp_demux -L cmd_mux_001 -L cmd_mux -L cmd_demux_001 -L cmd_demux -L router_003 -L router_002 -L router_001 -L router -L UART_avalon_jtag_slave_agent_rsp_fifo -L UART_avalon_jtag_slave_agent -L NIOSII_data_master_agent -L UART_avalon_jtag_slave_translator -L NIOSII_data_master_translator -L cpu -L rst_controller -L irq_mapper -L mm_interconnect_0 -L UART -L TIMER -L RESET_BUTTON -L RAM -L NIOSII -L DISPLAY -L timer_display_inst_reset_button_bfm -L timer_display_inst_reset_bfm -L timer_display_inst_display_7_segments_bfm -L timer_display_inst_clk_bfm -L timer_display_inst -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver $TOP_LEVEL_NAME
+  eval vsim -novopt -t ps $ELAB_OPTIONS $USER_DEFINED_ELAB_OPTIONS -L work -L work_lib -L altera_common_sv_packages -L error_adapter_0 -L avalon_st_adapter -L rsp_mux_001 -L rsp_mux -L rsp_demux -L cmd_mux_001 -L cmd_mux -L cmd_demux_001 -L cmd_demux -L router_003 -L router_002 -L router_001 -L router -L UART_avalon_jtag_slave_agent_rsp_fifo -L UART_avalon_jtag_slave_agent -L NIOSII_data_master_agent -L UART_avalon_jtag_slave_translator -L NIOSII_data_master_translator -L cpu -L rst_controller -L irq_mapper -L mm_interconnect_0 -L UART -L TIMER -L RAM -L PAUSE_BUTTON -L NIOSII -L DISPLAY -L timer_display_inst_reset_bfm -L timer_display_inst_pause_button_bfm -L timer_display_inst_display_7_segments_bfm -L timer_display_inst_clk_bfm -L timer_display_inst -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver $TOP_LEVEL_NAME
 }
 
 # ----------------------------------------

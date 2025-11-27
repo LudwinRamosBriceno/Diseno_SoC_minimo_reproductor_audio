@@ -9,13 +9,13 @@ z2
 cModel Technology
 Z0 dC:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/software/timer_display/obj/default/runtime/sim/mentor
 vtimer_display_NIOSII_cpu
-Z1 !s110 1764122449
+Z1 !s110 1764213831
 !i10b 1
-!s100 :6RT44YX_d6<iScXT86[X3
-INo[==VU=cWX_XJclQ;Efi3
+!s100 ChcIEKQ7Tf2l7@oRZL1Dm1
+IfLj`2EFO=B286RCWbZ@eN3
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-Z3 w1764121411
+Z3 w1764213787
 Z4 8C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_NIOSII_cpu.v
 Z5 FC:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_NIOSII_cpu.v
 L0 2834
@@ -23,7 +23,7 @@ Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1764122449.000000
+Z7 !s108 1764213830.000000
 Z8 !s107 C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_NIOSII_cpu.v|
 Z9 !s90 -reportprogress|300|C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_NIOSII_cpu.v|-work|cpu|
 !i113 1
@@ -45,7 +45,7 @@ R6
 r1
 !s85 0
 31
-R7
+Z13 !s108 1764213831.000000
 !s107 C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_NIOSII_cpu_debug_slave_sysclk.v|
 !s90 -reportprogress|300|C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_NIOSII_cpu_debug_slave_sysclk.v|-work|cpu|
 !i113 1
@@ -67,7 +67,7 @@ R6
 r1
 !s85 0
 31
-R7
+R13
 !s107 C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_NIOSII_cpu_debug_slave_tck.v|
 !s90 -reportprogress|300|C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_NIOSII_cpu_debug_slave_tck.v|-work|cpu|
 !i113 1
@@ -89,7 +89,7 @@ R6
 r1
 !s85 0
 31
-R7
+R13
 !s107 C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_NIOSII_cpu_debug_slave_wrapper.v|
 !s90 -reportprogress|300|C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_NIOSII_cpu_debug_slave_wrapper.v|-work|cpu|
 !i113 1
@@ -99,8 +99,8 @@ ntimer_display_@n@i@o@s@i@i_cpu_debug_slave_wrapper
 vtimer_display_NIOSII_cpu_nios2_avalon_reg
 R1
 !i10b 1
-!s100 GJUdf8L<SCV>V77V2fDge1
-IKYd937cZmV84kNP8GHlcM3
+!s100 c:QalA5OTRC5`<K1Bga4L0
+I8HXOCc<TWC@7@:Ri=DgWn0
 R2
 R0
 R3
@@ -551,7 +551,7 @@ R6
 r1
 !s85 0
 31
-R7
+R13
 !s107 C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_NIOSII_cpu_test_bench.v|
 !s90 -reportprogress|300|C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_NIOSII_cpu_test_bench.v|-work|cpu|
 !i113 1
