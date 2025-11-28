@@ -11,10 +11,6 @@ DAEMON=/usr/bin/$NAME
 PIDFILE=/var/run/$NAME.pid
 LOGFILE=/var/log/$NAME.log
 
-# Configuración de red
-ETH_INTERFACE=eth0
-IP_ADDRESS=192.168.1.10
-NETMASK=255.255.255.0
 
 start() {
     echo "==========================================="
@@ -33,21 +29,15 @@ start() {
         fi
     fi
     
-    # Configurar interfaz de red
-    echo "Configurando red en $ETH_INTERFACE..."
-    ifconfig $ETH_INTERFACE $IP_ADDRESS netmask $NETMASK up
-    
-    if [ $? -eq 0 ]; then
-        echo "✓ Red configurada: $IP_ADDRESS"
-    else
-        echo "⚠ Error al configurar red"
-    fi
     
     # Verificar que el binario existe
     if [ ! -x $DAEMON ]; then
         echo "Error: $DAEMON no existe o no es ejecutable"
         return 1
     fi
+    
+    # Cambiar al directorio de archivos web
+    cd /usr/web/
     
     # Iniciar el servidor
     echo "Iniciando $NAME..."
@@ -62,7 +52,7 @@ start() {
         echo "✓ $NAME iniciado correctamente (PID: $PID)"
         echo ""
         echo "Acceso web:"
-        echo "  http://$IP_ADDRESS:8080"
+        echo "  (verifique la IP configurada en su sistema)"
         echo ""
         echo "Logs:"
         echo "  tail -f $LOGFILE"
@@ -118,15 +108,8 @@ status() {
         if kill -0 $PID 2>/dev/null; then
             echo "$NAME está corriendo (PID: $PID)"
             
-            # Mostrar información de red
             echo ""
-            echo "Configuración de red:"
-            ifconfig $ETH_INTERFACE | grep "inet addr"
-            
-            # Mostrar puertos en escucha
-            echo ""
-            echo "Puertos en escucha:"
-            netstat -tuln | grep :8080 || echo "  (puerto 8080 no visible en netstat)"
+            echo "(Verifique la configuración de red y puertos manualmente si es necesario)"
             
             return 0
         else
