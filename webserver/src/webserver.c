@@ -7,11 +7,25 @@
  */
 
 #include "mongoose.h"
+
 #include <signal.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
+#include <fcntl.h>
+#include <sys/mman.h>
+#include <unistd.h>
+// Direcciones para RAM compartida (igual que hps_fifo_handshake.c)
+#define AXI_MASTER_BASE   0xFF200000
+#define RAM_OFFSET        0x3800
+#define MAP_SIZE          4096UL
+#define RAM_PHYS_ADDR     (AXI_MASTER_BASE + RAM_OFFSET)
+#define RAM_PAGE_BASE     (RAM_PHYS_ADDR & ~(MAP_SIZE - 1))
+#define RAM_PAGE_OFFSET   (RAM_PHYS_ADDR & (MAP_SIZE - 1))
+
+static volatile unsigned int *ram_reg = NULL;
+static unsigned int nios_action = 0;
 
 // Configuración del servidor
 #define HTTP_PORT "8080"
@@ -180,7 +194,8 @@ static void serve_api_status(struct mg_connection *c) {
         "\"is_playing\":%d," 
         "\"progress\":%d," 
         "\"track\":%d," 
-        "\"total_tracks\":%d"
+        "\"total_tracks\":%d," 
+        "\"nios_action\":%d"
         "}\n",
         songs[current_song].filename,
         songs[current_song].title,
@@ -194,7 +209,8 @@ static void serve_api_status(struct mg_connection *c) {
         is_playing,
         progress,
         current_song+1,
-        song_count
+        song_count,
+        nios_action
     );
 }
 
@@ -242,7 +258,8 @@ static void fn(struct mg_connection *c, int ev, void *ev_data) {
 // Función para simular actualización de tiempo (para testing)
 // En el sistema real, esto se leerá de la FPGA/memoria compartida
 // Simulación de avance de tiempo de reproducción
-static void update_audio_info(void) {
+static void update_audio_info(void *arg) {
+    (void)arg;
     if (is_playing) {
         current_time_sec++;
         // Obtener duración de la canción actual
@@ -260,19 +277,53 @@ static void update_audio_info(void) {
 
 // Timer callback para actualizar info periódicamente
 static void timer_fn(void *arg) {
-    update_audio_info();
-    // TODO: Aquí leerás los datos reales desde la FPGA
-    // Por ejemplo, leer memoria compartida o PIOs
-    // current_time_sec = read_fpga_time();
-    // is_playing = read_fpga_status();
+    update_audio_info(arg);
+    // Leer acción desde RAM compartida
+    if (ram_reg) {
+        nios_action = *ram_reg;
+        switch (nios_action) {
+            case 1:
+                printf("[SERVER] Acción recibida: PLAY (1)\n");
+                break;
+            case 2:
+                printf("[SERVER] Acción recibida: PAUSE (2)\n");
+                break;
+            case 3:
+                printf("[SERVER] Acción recibida: PREV (3)\n");
+                break;
+            case 4:
+                printf("[SERVER] Acción recibida: NEXT (4)\n");
+                break;
+            case 0:
+                printf("[SERVER] Sin acción (0)\n");
+                break;
+            default:
+                printf("[SERVER] Acción desconocida: %d\n", nios_action);
+        }
+    }
 }
 
 int main(void) {
+    // Mapeo de RAM compartida
+    int fd = open("/dev/mem", O_RDWR | O_SYNC);
+    if (fd < 0) {
+        perror("open /dev/mem");
+        // No abortar, solo deshabilitar lectura de RAM
+    } else {
+        void *ram_map_base = mmap(NULL, MAP_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED, fd, RAM_PAGE_BASE);
+        if (ram_map_base == MAP_FAILED) {
+            perror("mmap RAM");
+            ram_reg = NULL;
+        } else {
+            ram_reg = (volatile unsigned int *)((char *)ram_map_base + RAM_PAGE_OFFSET);
+        }
+        // No cerrar fd, mantener mapeo durante vida del proceso
+    }
     struct mg_mgr mgr;
     struct mg_connection *c;
 
     // Cargar canciones desde JSON
-    load_songs("../canciones.json");
+    load_songs("../web/canciones.json");
 
     // Configurar manejadores de señales
     signal(SIGINT, signal_handler);
@@ -300,12 +351,35 @@ int main(void) {
     printf("  POST /api/prev     - Canción anterior\n");
     printf("===========================================\n\n");
 
-    // Configurar timer para actualización periódica
-    mg_timer_add(&mgr, 1000, MG_TIMER_REPEAT, timer_fn, NULL);
+    // Configurar timer para simulación de avance de tiempo (solo actualiza tiempo)
+    mg_timer_add(&mgr, 1000, MG_TIMER_REPEAT, update_audio_info, NULL);
 
-    // Event loop principal
+    // Event loop principal con lectura frecuente de RAM
     while (s_signo == 0) {
-        mg_mgr_poll(&mgr, POLL_PERIOD_MS);
+        // Leer acción desde RAM compartida en cada ciclo
+        if (ram_reg) {
+            nios_action = *ram_reg;
+            switch (nios_action) {
+                case 1:
+                    printf("[SERVER] Acción recibida: PLAY (1)\n");
+                    break;
+                case 2:
+                    printf("[SERVER] Acción recibida: PAUSE (2)\n");
+                    break;
+                case 3:
+                    printf("[SERVER] Acción recibida: PREV (3)\n");
+                    break;
+                case 4:
+                    printf("[SERVER] Acción recibida: NEXT (4)\n");
+                    break;
+                case 0:
+                    // Solo imprimir si cambia
+                    break;
+                default:
+                    printf("[SERVER] Acción desconocida: %d\n", nios_action);
+            }
+        }
+        mg_mgr_poll(&mgr, 10); // Polling mucho más frecuente (cada 10 ms)
     }
 
     printf("\nDeteniendo servidor...\n");

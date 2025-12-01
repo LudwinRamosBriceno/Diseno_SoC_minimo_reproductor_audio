@@ -50,13 +50,33 @@ function updateUI(data) {
     // Actualizar barra de progreso
     progressElement.style.width = data.progress + '%';
 
-    // Actualizar estado de reproducción
-    if (data.is_playing) {
-        statusElement.textContent = '▶️ Reproduciendo';
-        statusElement.classList.add('playing');
-    } else {
-        statusElement.textContent = '⏸️ Pausado';
-        statusElement.classList.remove('playing');
+    // Actualizar estado de reproducción según nios_action
+    switch (data.nios_action) {
+        case 1:
+            statusElement.textContent = '▶️ Reproduciendo (NIOS)';
+            statusElement.classList.add('playing');
+            break;
+        case 2:
+            statusElement.textContent = '⏸️ Pausado (NIOS)';
+            statusElement.classList.remove('playing');
+            break;
+        case 3:
+            statusElement.textContent = '⏮️ Anterior (NIOS)';
+            statusElement.classList.remove('playing');
+            break;
+        case 4:
+            statusElement.textContent = '⏭️ Siguiente (NIOS)';
+            statusElement.classList.remove('playing');
+            break;
+        default:
+            // Mantener lógica original si no hay acción NIOS
+            if (data.is_playing) {
+                statusElement.textContent = '▶️ Reproduciendo';
+                statusElement.classList.add('playing');
+            } else {
+                statusElement.textContent = '⏸️ Pausado';
+                statusElement.classList.remove('playing');
+            }
     }
 
     // Actualizar número de pista

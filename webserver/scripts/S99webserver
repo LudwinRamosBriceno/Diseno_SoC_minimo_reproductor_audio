@@ -38,15 +38,18 @@ start() {
     
     # Cambiar al directorio de archivos web
     cd /usr/web/
-    
+
+    # Generar canciones.json antes de iniciar el servidor
+    /usr/web/load_music /usr/music/ /usr/web/canciones.json
+
     # Iniciar el servidor
     echo "Iniciando $NAME..."
     $DAEMON > $LOGFILE 2>&1 &
     PID=$!
     echo $PID > $PIDFILE
-    
+
     sleep 1
-    
+
     # Verificar que se inició correctamente
     if kill -0 $PID 2>/dev/null; then
         echo "✓ $NAME iniciado correctamente (PID: $PID)"
