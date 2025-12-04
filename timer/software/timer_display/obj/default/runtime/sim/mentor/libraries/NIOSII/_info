@@ -1,0 +1,32 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/software/timer_display/obj/default/runtime/sim/mentor
+vtimer_display_NIOSII
+!s110 1764213832
+!i10b 1
+!s100 a?AXf;6Zn158n1b@ED3b]1
+IaD8^OIJD<Q?kL0h:7lWJ<3
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1764213777
+8C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_NIOSII.v
+FC:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_NIOSII.v
+L0 9
+OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1764213832.000000
+!s107 C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_NIOSII.v|
+!s90 -reportprogress|300|C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_NIOSII.v|-work|NIOSII|
+!i113 1
+o-work NIOSII
+tCvgOpt 0
+ntimer_display_@n@i@o@s@i@i

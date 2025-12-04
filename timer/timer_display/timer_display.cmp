@@ -1,0 +1,11 @@
+	component timer_display is
+		port (
+			clk_clk                   : in  std_logic                     := 'X'; -- clk
+			display_7_segments_export : out std_logic_vector(27 downto 0);        -- export
+			pause_button_export       : in  std_logic                     := 'X'; -- export
+			reset_reset_n             : in  std_logic                     := 'X'; -- reset_n
+			reset_button_export       : in  std_logic                     := 'X'; -- export
+			start_button_export       : in  std_logic                     := 'X'  -- export
+		);
+	end component timer_display;
+

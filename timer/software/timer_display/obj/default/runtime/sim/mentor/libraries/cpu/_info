@@ -1,0 +1,560 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/software/timer_display/obj/default/runtime/sim/mentor
+vtimer_display_NIOSII_cpu
+Z1 !s110 1764213831
+!i10b 1
+!s100 ChcIEKQ7Tf2l7@oRZL1Dm1
+IfLj`2EFO=B286RCWbZ@eN3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1764213787
+Z4 8C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_NIOSII_cpu.v
+Z5 FC:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_NIOSII_cpu.v
+L0 2834
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1764213830.000000
+Z8 !s107 C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_NIOSII_cpu.v|
+Z9 !s90 -reportprogress|300|C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_NIOSII_cpu.v|-work|cpu|
+!i113 1
+Z10 o-work cpu
+Z11 tCvgOpt 0
+ntimer_display_@n@i@o@s@i@i_cpu
+vtimer_display_NIOSII_cpu_debug_slave_sysclk
+R1
+!i10b 1
+!s100 cXmTcK`Kkim8k?0H4`Azc0
+IP;B?SK6aBkY6BfBfU;A=I1
+R2
+R0
+R3
+8C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_NIOSII_cpu_debug_slave_sysclk.v
+FC:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_NIOSII_cpu_debug_slave_sysclk.v
+Z12 L0 21
+R6
+r1
+!s85 0
+31
+Z13 !s108 1764213831.000000
+!s107 C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_NIOSII_cpu_debug_slave_sysclk.v|
+!s90 -reportprogress|300|C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_NIOSII_cpu_debug_slave_sysclk.v|-work|cpu|
+!i113 1
+R10
+R11
+ntimer_display_@n@i@o@s@i@i_cpu_debug_slave_sysclk
+vtimer_display_NIOSII_cpu_debug_slave_tck
+R1
+!i10b 1
+!s100 Y[nNMC1RRfeN8LZK5Mm>;1
+Ih3<=a<0Y]Jlb6<7638Z7b0
+R2
+R0
+R3
+8C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_NIOSII_cpu_debug_slave_tck.v
+FC:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_NIOSII_cpu_debug_slave_tck.v
+R12
+R6
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_NIOSII_cpu_debug_slave_tck.v|
+!s90 -reportprogress|300|C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_NIOSII_cpu_debug_slave_tck.v|-work|cpu|
+!i113 1
+R10
+R11
+ntimer_display_@n@i@o@s@i@i_cpu_debug_slave_tck
+vtimer_display_NIOSII_cpu_debug_slave_wrapper
+R1
+!i10b 1
+!s100 G?bCT@2BGicjG`]N>Gf_V0
+Iio<@GQ1IM?H]J97C7lZ_D1
+R2
+R0
+R3
+8C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_NIOSII_cpu_debug_slave_wrapper.v
+FC:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_NIOSII_cpu_debug_slave_wrapper.v
+R12
+R6
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_NIOSII_cpu_debug_slave_wrapper.v|
+!s90 -reportprogress|300|C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_NIOSII_cpu_debug_slave_wrapper.v|-work|cpu|
+!i113 1
+R10
+R11
+ntimer_display_@n@i@o@s@i@i_cpu_debug_slave_wrapper
+vtimer_display_NIOSII_cpu_nios2_avalon_reg
+R1
+!i10b 1
+!s100 c:QalA5OTRC5`<K1Bga4L0
+I8HXOCc<TWC@7@:Ri=DgWn0
+R2
+R0
+R3
+R4
+R5
+L0 2023
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+ntimer_display_@n@i@o@s@i@i_cpu_nios2_avalon_reg
+vtimer_display_NIOSII_cpu_nios2_oci
+R1
+!i10b 1
+!s100 C:8f^:>]2c[G5lUM1^C9c2
+IDOE=On>]n:m]BU8`3S=8Q1
+R2
+R0
+R3
+R4
+R5
+L0 2362
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+ntimer_display_@n@i@o@s@i@i_cpu_nios2_oci
+vtimer_display_NIOSII_cpu_nios2_oci_break
+R1
+!i10b 1
+!s100 5cA:?01b754HgnLd@ACE71
+IKXM24d<J]D?dJbUlc:33F2
+R2
+R0
+R3
+R4
+R5
+L0 295
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+ntimer_display_@n@i@o@s@i@i_cpu_nios2_oci_break
+vtimer_display_NIOSII_cpu_nios2_oci_compute_input_tm_cnt
+R1
+!i10b 1
+!s100 TKcYOgzAV:1L_bTOLg[hk1
+IaGmKXon[W3Bi5z^:NL4PM1
+R2
+R0
+R3
+R4
+R5
+L0 1265
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+ntimer_display_@n@i@o@s@i@i_cpu_nios2_oci_compute_input_tm_cnt
+vtimer_display_NIOSII_cpu_nios2_oci_dbrk
+R1
+!i10b 1
+!s100 gdI[PgE0OY1Dc<fVnlZ;;3
+I8;cMOL=:8izB?MD^0FR=61
+R2
+R0
+R3
+R4
+R5
+L0 795
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+ntimer_display_@n@i@o@s@i@i_cpu_nios2_oci_dbrk
+vtimer_display_NIOSII_cpu_nios2_oci_debug
+R1
+!i10b 1
+!s100 W^;88;<3D61Y4FdiHmdQC3
+ILE3CEEhFBH2`BBGe;JXjV1
+R2
+R0
+R3
+R4
+R5
+L0 153
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+ntimer_display_@n@i@o@s@i@i_cpu_nios2_oci_debug
+vtimer_display_NIOSII_cpu_nios2_oci_dtrace
+R1
+!i10b 1
+!s100 K^29a:RRek5PF<QD0IU9D2
+Ic:jI?OzZNN3j=bQP:BiKR2
+R2
+R0
+R3
+R4
+R5
+L0 1183
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+ntimer_display_@n@i@o@s@i@i_cpu_nios2_oci_dtrace
+vtimer_display_NIOSII_cpu_nios2_oci_fifo
+R1
+!i10b 1
+!s100 4^HIe`F@kZ`OYefTb21on0
+IWF5ZT1K]62JoTFZ55L8B40
+R2
+R0
+R3
+R4
+R5
+L0 1427
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+ntimer_display_@n@i@o@s@i@i_cpu_nios2_oci_fifo
+vtimer_display_NIOSII_cpu_nios2_oci_fifo_cnt_inc
+R1
+!i10b 1
+!s100 V:S8kNm8kWF50MQk1TZ1Z3
+I:4GA?^QJ]QTY<UR5e9kH23
+R2
+R0
+R3
+R4
+R5
+L0 1380
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+ntimer_display_@n@i@o@s@i@i_cpu_nios2_oci_fifo_cnt_inc
+vtimer_display_NIOSII_cpu_nios2_oci_fifo_wrptr_inc
+R1
+!i10b 1
+!s100 Z2WYU>RTZA?[eUP;FicHE0
+INXYdXIJn;RV=XUecJ=eiA3
+R2
+R0
+R3
+R4
+R5
+L0 1337
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+ntimer_display_@n@i@o@s@i@i_cpu_nios2_oci_fifo_wrptr_inc
+vtimer_display_NIOSII_cpu_nios2_oci_im
+R1
+!i10b 1
+!s100 YQ2kVgGgeaAgQ]z=lcdm]2
+IR7EXjVn;FmS19WM4d5GK02
+R2
+R0
+R3
+R4
+R5
+L0 1936
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+ntimer_display_@n@i@o@s@i@i_cpu_nios2_oci_im
+vtimer_display_NIOSII_cpu_nios2_oci_itrace
+R1
+!i10b 1
+!s100 lbVH0z?iFjRBWzOiC[h>h3
+IHT89HICX8E3`HT82>B0=@2
+R2
+R0
+R3
+R4
+R5
+L0 982
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+ntimer_display_@n@i@o@s@i@i_cpu_nios2_oci_itrace
+vtimer_display_NIOSII_cpu_nios2_oci_pib
+R1
+!i10b 1
+!s100 FYz_Xi=oOo0Wj0H2Zz2o=1
+IaE_5zmk:G_B2HcFO0XPoA0
+R2
+R0
+R3
+R4
+R5
+L0 1913
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+ntimer_display_@n@i@o@s@i@i_cpu_nios2_oci_pib
+vtimer_display_NIOSII_cpu_nios2_oci_td_mode
+R1
+!i10b 1
+!s100 4>JBGIadAC;=`bRgEPUVz2
+I4^QJU80R3H>;=F?TFf_Jk0
+R2
+R0
+R3
+R4
+R5
+L0 1115
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+ntimer_display_@n@i@o@s@i@i_cpu_nios2_oci_td_mode
+vtimer_display_NIOSII_cpu_nios2_oci_xbrk
+R1
+!i10b 1
+!s100 [c;l>M:^FNfAT2gi>]7W13
+Ifi_OJB5`75caT2<8mEV652
+R2
+R0
+R3
+R4
+R5
+L0 588
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+ntimer_display_@n@i@o@s@i@i_cpu_nios2_oci_xbrk
+vtimer_display_NIOSII_cpu_nios2_ocimem
+R1
+!i10b 1
+!s100 i7?zRLYSMb??VQ8j5zQHd3
+I^aTka2[=FF0YTEYQES7Uf0
+R2
+R0
+R3
+R4
+R5
+L0 2181
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+ntimer_display_@n@i@o@s@i@i_cpu_nios2_ocimem
+vtimer_display_NIOSII_cpu_nios2_performance_monitors
+R1
+!i10b 1
+!s100 dm3AK]>Pi`QHY3dNNYIif1
+IU7BA>5i^z1g`IhYXDV3]V0
+R2
+R0
+R3
+R4
+R5
+L0 2006
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+ntimer_display_@n@i@o@s@i@i_cpu_nios2_performance_monitors
+vtimer_display_NIOSII_cpu_ociram_sp_ram_module
+R1
+!i10b 1
+!s100 LC7NV14;OUFBz^Ez4hOHD2
+I[MXO>:Q@IS?doGF7Z<K0=1
+R2
+R0
+R3
+R4
+R5
+L0 2116
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+ntimer_display_@n@i@o@s@i@i_cpu_ociram_sp_ram_module
+vtimer_display_NIOSII_cpu_register_bank_a_module
+R1
+!i10b 1
+!s100 ^NY;80M4B[=A=8DIC9W4N2
+IJeKbeHnd1W>IjOSAJ_XMH3
+R2
+R0
+R3
+R4
+R5
+R12
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+ntimer_display_@n@i@o@s@i@i_cpu_register_bank_a_module
+vtimer_display_NIOSII_cpu_register_bank_b_module
+R1
+!i10b 1
+!s100 lOYIg<?h_EGIHBd7GD0>e2
+IHY;WE:0C9oSb>?O;I:4H51
+R2
+R0
+R3
+R4
+R5
+L0 87
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+ntimer_display_@n@i@o@s@i@i_cpu_register_bank_b_module
+vtimer_display_NIOSII_cpu_test_bench
+R1
+!i10b 1
+!s100 n23?;X>MTKC982][oAXGH2
+Ime;PYQg``JRg62EXSd6BR3
+R2
+R0
+R3
+8C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_NIOSII_cpu_test_bench.v
+FC:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_NIOSII_cpu_test_bench.v
+R12
+R6
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_NIOSII_cpu_test_bench.v|
+!s90 -reportprogress|300|C:/Users/alber/OneDrive/Documentos/GitHub/Diseno_SoC_minimo_reproductor_audio/timer_display/testbench/timer_display_tb/simulation/submodules/timer_display_NIOSII_cpu_test_bench.v|-work|cpu|
+!i113 1
+R10
+R11
+ntimer_display_@n@i@o@s@i@i_cpu_test_bench
