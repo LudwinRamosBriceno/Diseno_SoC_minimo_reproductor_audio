@@ -1,0 +1,81 @@
+/* 
+ * Estilos para Audio Player Web Interface
+ * Diseño moderno y responsive
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(120deg, #4e54c8 0%, #8f94fb 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.container { max-width: 600px; width: 100%; }
+.player {
+  background: rgba(30, 30, 60, 0.7);
+  border-radius: 18px;
+  padding: 32px;
+  box-shadow: 0 8px 32px rgba(30,30,60,0.25);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+.title {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px #4e54c8;
+}
+.track-info { text-align: center; margin-bottom: 22px; }
+.track-info h2 { font-size: 22px; margin-bottom: 8px; font-weight: 700; }
+.track-info p { font-size: 15px; opacity: 0.92; margin: 3px 0; }
+.time-info {
+  display: flex; align-items: center; gap: 12px; margin-bottom: 16px;
+}
+.time-info span {
+  font-size: 13px; font-weight: 600; min-width: 45px; font-family: 'Courier New', monospace;
+}
+.progress-bar {
+  flex: 1; height: 8px; background: rgba(255,255,255,0.18); border-radius: 8px; overflow: hidden;
+}
+.progress {
+  height: 100%; background: linear-gradient(90deg,#43e97b 0%,#38f9d7 100%);
+  border-radius: 8px; transition: width 0.3s; box-shadow: 0 0 8px #38f9d7;
+}
+.status {
+  display: flex; justify-content: space-between; align-items: center;
+  padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.08);
+}
+.status span { font-size: 13px; font-weight: 500; opacity: 0.92; }
+#status { font-size: 15px; font-weight: 700; }
+.controls { text-align: center; margin-top: 18px; }
+.controls button {
+  background: linear-gradient(90deg,#4e54c8 0%,#8f94fb 100%);
+  color: #fff; border: none; border-radius: 8px; padding: 8px 18px;
+  font-size: 15px; font-weight: 600; margin: 0 8px; box-shadow: 0 2px 8px #4e54c8;
+  transition: background 0.2s, transform 0.2s;
+}
+.controls button:hover {
+  background: linear-gradient(90deg,#43e97b 0%,#38f9d7 100%);
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.info { margin-top: 18px; text-align: center; opacity: 0.7; font-size: 12px; }
+.info p { margin: 4px 0; }
+@keyframes pulse { 0%,100%{opacity:1;} 50%{opacity:0.6;} }
+.playing { animation: pulse 2s infinite; }
+@media (max-width:600px) {
+  .player { padding: 18px 8px; }
+  .title { font-size: 19px; }
+  .track-info h2 { font-size: 17px; }
+  .track-info p { font-size: 12px; }
+  .controls button { font-size: 13px; padding: 6px 12px; }
+}

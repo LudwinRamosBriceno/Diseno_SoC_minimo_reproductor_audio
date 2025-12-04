@@ -1,0 +1,152 @@
+#!/bin/sh
+#
+# Script de inicio para Audio Player Web Server
+# Configurar como daemon en DE1-SOC
+#
+# Instalar en: /etc/init.d/S99webserver
+# Permisos: chmod +x /etc/init.d/S99webserver
+
+NAME=webserver
+DAEMON=/usr/bin/$NAME
+PIDFILE=/var/run/$NAME.pid
+LOGFILE=/var/log/$NAME.log
+
+
+start() {
+    echo "==========================================="
+    echo "  Audio Player Web Server - Starting"
+    echo "==========================================="
+    
+    # Verificar si ya está corriendo
+    if [ -f $PIDFILE ]; then
+        PID=$(cat $PIDFILE)
+        if kill -0 $PID 2>/dev/null; then
+            echo "Error: $NAME ya está corriendo (PID: $PID)"
+            return 1
+        else
+            echo "Eliminando PID obsoleto..."
+            rm -f $PIDFILE
+        fi
+    fi
+    
+    
+    # Verificar que el binario existe
+    if [ ! -x $DAEMON ]; then
+        echo "Error: $DAEMON no existe o no es ejecutable"
+        return 1
+    fi
+    
+    # Cambiar al directorio de archivos web
+    cd /usr/web/
+
+    # Generar canciones.json antes de iniciar el servidor
+    /usr/web/load_music /usr/music/ /usr/web/canciones.json
+
+    # Iniciar el servidor
+    echo "Iniciando $NAME..."
+    $DAEMON > $LOGFILE 2>&1 &
+    PID=$!
+    echo $PID > $PIDFILE
+
+    sleep 1
+
+    # Verificar que se inició correctamente
+    if kill -0 $PID 2>/dev/null; then
+        echo "✓ $NAME iniciado correctamente (PID: $PID)"
+        echo ""
+        echo "Acceso web:"
+        echo "  (verifique la IP configurada en su sistema)"
+        echo ""
+        echo "Logs:"
+        echo "  tail -f $LOGFILE"
+        echo "==========================================="
+        return 0
+    else
+        echo "✗ Error al iniciar $NAME"
+        rm -f $PIDFILE
+        return 1
+    fi
+}
+
+stop() {
+    echo "Deteniendo $NAME..."
+    
+    if [ ! -f $PIDFILE ]; then
+        echo "$NAME no está corriendo"
+        return 0
+    fi
+    
+    PID=$(cat $PIDFILE)
+    
+    if kill -0 $PID 2>/dev/null; then
+        kill $PID
+        
+        # Esperar hasta 5 segundos
+        for i in 1 2 3 4 5; do
+            if ! kill -0 $PID 2>/dev/null; then
+                break
+            fi
+            sleep 1
+        done
+        
+        # Si aún está corriendo, forzar
+        if kill -0 $PID 2>/dev/null; then
+            echo "Forzando detención..."
+            kill -9 $PID
+        fi
+        
+        rm -f $PIDFILE
+        echo "✓ $NAME detenido"
+    else
+        echo "$NAME no está corriendo (PID obsoleto)"
+        rm -f $PIDFILE
+    fi
+    
+    return 0
+}
+
+status() {
+    if [ -f $PIDFILE ]; then
+        PID=$(cat $PIDFILE)
+        if kill -0 $PID 2>/dev/null; then
+            echo "$NAME está corriendo (PID: $PID)"
+            
+            echo ""
+            echo "(Verifique la configuración de red y puertos manualmente si es necesario)"
+            
+            return 0
+        else
+            echo "$NAME no está corriendo (PID obsoleto)"
+            return 1
+        fi
+    else
+        echo "$NAME no está corriendo"
+        return 3
+    fi
+}
+
+restart() {
+    stop
+    sleep 2
+    start
+}
+
+case "$1" in
+    start)
+        start
+        ;;
+    stop)
+        stop
+        ;;
+    restart)
+        restart
+        ;;
+    status)
+        status
+        ;;
+    *)
+        echo "Uso: $0 {start|stop|restart|status}"
+        exit 1
+esac
+
+exit $?
